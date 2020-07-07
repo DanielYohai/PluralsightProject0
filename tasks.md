@@ -1,5 +1,5 @@
-# Purpose of the Project
-<br />This project will guide you step by step to check if user input data are valid "Tesla Numbers".
+# Project Tasks
+<br />The tasks for this project are as follows:
 
 ## Task 1 - Get User Input
 
