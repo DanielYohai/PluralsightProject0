@@ -7,7 +7,7 @@ Pytest is not part of the Python Standard Library.  For this project's unit test
 
 https://docs.pytest.org/en/stable/getting-started.html
 
-After installing ``, check that the library has been properly installed by confirming the version:
+After installing `pytest`, check that the library has been properly installed by confirming the version:
 
 `py.test --version`
 
