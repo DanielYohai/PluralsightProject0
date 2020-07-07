@@ -13,3 +13,8 @@ Nikola Tesla is reputed to have been fascinated unto the point of obsession with
 
 https://www.youtube.com/watch?v=GnEWOYKgI4o
 
+# Project Tasks
+You can do the project by completing the Project Tasks:
+https://github.com/DanielYohai/PluralsightProject0/blob/master/tasks.md
+
+
