@@ -1,6 +1,6 @@
 # PluralsightProject0
 
-Pluralsight Project 0:  Tesla Numbers 3, 6, 9 - This project will guide you step by step to check if user input data are valid "Tesla Numbers".
+Pluralsight Project 0:  Tesla Numbers 3, 6, 9 - This project will guide you step by step to check if user input data are valid "Tesla Numbers", i.e. numbers divisible by 3.
 
 # Background
 ### "If you only knew the magnificence of the 3, 6, and 9, then you would have a key to the universe." - Nikola Tesla
