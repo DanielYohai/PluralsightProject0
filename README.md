@@ -3,7 +3,7 @@
 Pluralsight Project 0 - Tesla Numbers 3, 6, 9
 
 # Background
-### Nikola Tesla: "If you only knew the magnificence of the 3, 6, and 9, then you would have a key to the universe."
+### "If you only knew the magnificence of the 3, 6, and 9, then you would have a key to the universe." - Nikola Tesla
 <br />
 Nikola Tesla was a deep and mysterious man. He sought and discovered hidden laws, facts, and truths of the Universe, and shared them with mankind. As you will come to know, Mathematics is something that is discovered (not invented), Mathematics is the language of the Universe, and Mathematics never lies.  
 
