@@ -4,6 +4,10 @@ This project will guide you step by step to test if user input data are valid "T
 
 In order to make the project as simple as possible to understand the essential testing concepts, we will be using the third-party `pytest` testing library since it requires less boilerplate code than the built-in `unittest` that comes as part of the Python Standard Library. 
 
+The only dependency that is required for this project is installation of the `` library.
+
+https://docs.pytest.org/en/stable/getting-started.html
+
 # Background
 ### "If you only knew the magnificence of the 3, 6, and 9, then you would have a key to the universe." - Nikola Tesla
 
