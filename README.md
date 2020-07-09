@@ -1,14 +1,16 @@
 # Project Overview
 
-This project is the beginning of a multi-step, scalable project that explores the qualities and interesting phenomena of "Tesla Numbers", i.e. numbers divisible by 3, e.g. 3, 6, 9, 12, 15, 18, etc.
+This project is the beginning (i.e. Step 0) of a multi-step, scalable project that explores the qualities and interesting phenomena of "Tesla Numbers", i.e. numbers divisible by 3, e.g. 3, 6, 9, 12, 15, 18, etc.
 
 Each step will explore additional concepts and features of both Tesla Numbers as well as unit testing.
 
 Each step consists of a number of tasks - each of which will be unit tested.
 
-This step of will confirm if user input data are valid Tesla Numbers.
+This Step 0 will test if user input data are valid Tesla Numbers.
 
-In order to make the project as simple as possible to understand the essential testing concepts, we will be using the third-party `pytest` testing library since it requires less boilerplate code than the built-in `unittest` testing library that comes as part of the Python Standard Library. 
+In order to make the project as simple as possible to understand and learn the essential testing concepts, we will be using the third-party `pytest` testing library.
+
+`pytest` requires less boilerplate code than the built-in `unittest` testing library which comes as part of the Python Standard Library. 
 
 The only dependency that is required for this project is installation of the `pytest` library.
 
@@ -25,6 +27,7 @@ Nikola Tesla is reputed to have been fascinated unto the point of obsession with
 https://www.youtube.com/watch?v=GnEWOYKgI4o
 
 # Project Tasks
+
 You can do this project by completing the Project Tasks:
 
 https://github.com/DanielYohai/PluralsightProject0/blob/master/tasks.md
