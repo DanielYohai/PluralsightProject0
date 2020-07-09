@@ -23,7 +23,7 @@ If you do not see a message similar to the one above, then `pytest` wasn't insta
 
 Begin your project by creating a Python file named `main.py` in the root folder of your project.
 
-Within the file `main.py`, create a Python list object called variable `t` that will be a List of Tesla Numbers to be defined as all numbers that are divisible by 3. The range will start at integer 3 and continue until integer 3003 in steps of 3, and thus will include all multiples of 3 including the integer 3000 (but not including integer 3003), i.e. a total of 1000 integer numbers.
+Within the file `main.py`, create a Python list object called variable `t` that will be a List of a Range of Tesla Numbers (from 3 to 3000) to be defined as all numbers that are divisible by 3. The range will start at integer 3 and continue until integer 3003 in steps of 3, and thus will include all multiples of 3 including the integer 3000 (but not including integer 3003), i.e. a total of 1000 integer numbers.
 
 Most testing follows the Arrange-Act-Assert Model which will be explained throughout.
 ```
@@ -41,5 +41,9 @@ Run the program from your IDLE, IDE, or Command Line Interface (CLI), and you wi
 <class 'list'>
 1000
 ```
+
+However, as this project scales, it will be increasingly difficult to test things manually, and therefore we will use `pytest` to automate our unit testing.
+
+
 
 ## Task 2 - 
