@@ -1,6 +1,6 @@
 # Project Overview
 
-This project is the beginning of a multi-step, scalable project that explores the qualities of "Tesla Numbers", i.e. numbers divisible by 3, e.g. 3, 6, 9, 12, 15, 18, etc.
+This project is the beginning of a multi-step, scalable project that explores the qualities and interesting phenomena of "Tesla Numbers", i.e. numbers divisible by 3, e.g. 3, 6, 9, 12, 15, 18, etc.
 
 Each step will explore additional concepts and features of both Tesla Numbers as well as unit testing.
 
