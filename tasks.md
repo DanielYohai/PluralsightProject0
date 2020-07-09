@@ -19,7 +19,21 @@ Both commands should return output that is similar to the following, but will va
 
 If you do not see a message similar to the one above, then `pytest` wasn't installed properly, and you will need to troubleshoot and solve this issue before you can proceed with the Projects Tasks.
 
-## Task 1 - Get User Input
+## Task 1 - Create Python File `main.py`
+
+Begin your project by creating a Python file named `main.py` in the root folder of your project.
+
+Within the file `main.py`, create a Python list object called variable "t" that will be a List of Tesla Numbers to be defined as all numbers that are divisible by 3. The range will start at integer 3 and continue until integer 3003 in steps of 3, and thus will include all multiples of 3 including the integer 3000 (but not including integer 3003), i.e. a total of 1000 integer numbers.
+
+`>>> t = list(range(3,3003,3))`
+
+`>>> type(t)`
+`<class 'list'>`
+
+`>>> len(t)`
+`1000`
+
+## Task z - Get User Input
 
 Run the main program by typing `python main.py` in your command window from the root directory where you place the files for this project.
 
@@ -29,6 +43,6 @@ Each user-inputted number will be tested using `pytest` and confirmed as either 
 
 Additional tests will be performed to corroborate the findings of the first test.  
 
-## Task 2 - 
+
 
 ## Task 3 - 
