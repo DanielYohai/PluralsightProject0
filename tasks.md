@@ -25,24 +25,20 @@ Begin your project by creating a Python file named `main.py` in the root folder 
 
 Within the file `main.py`, create a Python list object called variable `t` that will be a List of Tesla Numbers to be defined as all numbers that are divisible by 3. The range will start at integer 3 and continue until integer 3003 in steps of 3, and thus will include all multiples of 3 including the integer 3000 (but not including integer 3003), i.e. a total of 1000 integer numbers.
 
-`>>> t = list(range(3,3003,3))`
+Most testing follows the Arrange-Act-Assert Model which will be explained throughout.
+```
+## DECLARE VARIABLES - ARRANGE - i.e. ARRANGE THE VARIABLES AND CONDITIONS TO BE TESTED
+t = list(range(3,3003,3))
 
-`>>> type(t)`
-`<class 'list'>`
+print(type(t))
+print(len(t))
+```
 
-`>>> len(t)`
-`1000`
+Run the program from your IDLE, IDE, or Command Line Interface (CLI), and you will see the following output:
 
-## Task z - Get User Input
+``` 
+<class 'list'>
+1000
+```
 
-Run the main program by typing `python main.py` in your command window from the root directory where you place the files for this project.
-
-You will be prompted to enter three (3) random integer numbers of your choice.
-
-Each user-inputted number will be tested using `pytest` and confirmed as either a "Tesla Number" (i.e. a number that is divisible by 3), or not a Tesla Number.
-
-Additional tests will be performed to corroborate the findings of the first test.  
-
-
-
-## Task 3 - 
+## Task 2 - 
