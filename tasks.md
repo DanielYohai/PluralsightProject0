@@ -21,13 +21,13 @@ If you do not see a message similar to the one above, then `pytest` wasn't insta
 
 ## Task 1 - Get User Input
 
-Run the main program by typing `python p.py` in your command window.
+Run the main program by typing `python p.py` in your command window from the directory where you place the files for this project.
 
-You will be prompted to enter three (3) integer numbers.  
+You will be prompted to enter three (3) random integer numbers of your choice.
 
 Each user-inputted number will be tested using `pytest` and confirmed as either a "Tesla Number" (i.e. a number that is divisible by 3), or not a Tesla Number.
 
-Additional tests will be performed to corroborrate the findings of the first test.  
+Additional tests will be performed to corroborate the findings of the first test.  
 
 ## Task 2 - 
 
