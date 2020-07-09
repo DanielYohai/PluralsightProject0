@@ -21,7 +21,11 @@ If you do not see a message similar to the one above, then `pytest` wasn't insta
 
 ## Task 1 - Get User Input
 
-You will be prompted to enter three (3) integer numbers.  These numbers will be confirmed as either a "Tesla Number" (i.e. a number that is divisible by 3), or not a Tesla Number.
+You will be prompted to enter three (3) integer numbers.  
+
+Each user-inputted number will be tested using `pytest` and confirmed as either a "Tesla Number" (i.e. a number that is divisible by 3), or not a Tesla Number.
+
+Additional tests will be performed to corroborrate the findings of the first test.  
 
 ## Task 2 - 
 
