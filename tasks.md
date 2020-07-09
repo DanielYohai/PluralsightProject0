@@ -1,5 +1,5 @@
-# Project Tasks
-<br />The tasks for this project are as follows:
+# Project 0 Tasks
+<br />The tasks for this Project 0 are as follows:
 
 ## Task 0 - Install `pytest`
 
@@ -21,7 +21,7 @@ If you do not see a message similar to the one above, then `pytest` wasn't insta
 
 ## Task 1 - Get User Input
 
-Run the main program by typing `python p.py` in your command window from the directory where you place the files for this project.
+Run the main program by typing `python main.py` in your command window from the root directory where you place the files for this project.
 
 You will be prompted to enter three (3) random integer numbers of your choice.
 
