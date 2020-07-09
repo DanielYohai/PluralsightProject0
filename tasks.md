@@ -30,6 +30,7 @@ Most testing follows the Arrange-Act-Assert Model which will be explained throug
 ## DECLARE VARIABLES - ARRANGE - i.e. ARRANGE THE VARIABLES AND CONDITIONS TO BE TESTED
 t = list(range(3,3003,3))
 
+## TESTING PURPOSES - TEST MANUALLY - PRINT OUTPUT - 
 print(type(t))
 print(len(t))
 ```
