@@ -1,6 +1,8 @@
-# PluralsightProject0
+# Project Overview
 
-Pluralsight Project 0:  Tesla Numbers 3, 6, 9 - This project will guide you step by step to check if user input data are valid "Tesla Numbers", i.e. numbers divisible by 3.
+This project will guide you step by step to test if user input data are valid "Tesla Numbers", i.e. numbers divisible by 3, e.g. 3, 6, 9, 12, 15, 18, etc.
+
+In order to make the project as simple as possible to understand the essential testing concepts, we will be using the third-party `pytest` testing library since it requires less boilerplate code than the built-in `unittest` that comes as part of the Python Standard Library. 
 
 # Background
 ### "If you only knew the magnificence of the 3, 6, and 9, then you would have a key to the universe." - Nikola Tesla
@@ -12,6 +14,8 @@ Nikola Tesla is reputed to have been fascinated unto the point of obsession with
 
 
 https://www.youtube.com/watch?v=GnEWOYKgI4o
+
+# Project Overview
 
 # Project Tasks
 You can do this project by completing the Project Tasks:
