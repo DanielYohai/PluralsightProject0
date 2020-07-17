@@ -40,7 +40,7 @@ Tests, as defined by `unittest`, have two parts:
   <li> the test itself.</li>
 </ol>
 
-Individual tests are created by subclassing TestCase and overriding or adding appropriate methods.(Hellman 2017: 1051)
+Individual tests are created by subclassing `TestCase` and overriding or adding appropriate methods.(Hellman 2017: 1051)
 
 # Running Tests
 The easiest way to run unittest tests is use the automatic discovery available through the command-line interface (CLI).(Hellman 2017: 1051)
