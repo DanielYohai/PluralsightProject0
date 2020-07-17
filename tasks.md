@@ -19,7 +19,7 @@ Both commands should return output that is similar to the following, but will va
 
 If you do not see a message similar to the one above, then `pytest` wasn't installed properly, and you will need to troubleshoot and solve this issue before you can proceed with the Projects Tasks.
 
-As this project scales, it will be increasingly difficult to test things manually, and therefore we will first use `unittest` and then `pytest` to automate our unit testing.
+As this project scales, it will be increasingly difficult to test things manually, and therefore we will first use `unittest` and then `pytest` to automate our unit testing throughout.
 
 ## Task 1 - Create Python File `main.py`
 
@@ -40,46 +40,50 @@ import os
 ## END IMPORT MODULES
 ## END IMPORT MODULES
 ## END IMPORT MODULES
+```
 
-## BEGIN DECLARE VARIABLES
-## BEGIN DECLARE VARIABLES
-## BEGIN DECLARE VARIABLES
+A testcase is created by subclassing `unittest.TestCase`.  Individual tests are defined with methods whose names start with the letters `test`.  This naming convention informs the test runner about which methods represent tests.(Reference 2)
 
-## END DECLARE VARIABLES
-## END DECLARE VARIABLES
-## END DECLARE VARIABLES
+Let's create our first testcase with tests to confirm the existence of the file `main.py`.
 
-## BEGIN DEFINE FUNCTIONS
-## BEGIN DEFINE FUNCTIONS
-## BEGIN DEFINE FUNCTIONS
+Within the file `main.py`, add the following code below the section where you imported modules:
 
-## END DEFINE FUNCTIONS
-## END DEFINE FUNCTIONS
-## END DEFINE FUNCTIONS
-
+```
 ## BEGIN DEFINE CLASSES (UNITTESTS)
 ## BEGIN DEFINE CLASSES (UNITTESTS)
 ## BEGIN DEFINE CLASSES (UNITTESTS)
     
+class cls_Tests(unittest.TestCase):
+    """ This is docstring for the class cls_Tests..."""
+    
+    def setUp(self):
+        """ This is docstring for setUp method...
+        Method called to prepare the test fixture.
+        This is called immediately before calling the test method."""
+        pass
+        
+    def tearDown(self):
+        """ This is docstring for tearDown method...
+        Method called immediately after the test method has been
+        called and the result recorded."""
+        pass
 
-## END DEFINE CLASSES (UNITTESTS)
-## END DEFINE CLASSES (UNITTESTS)
-## END DEFINE CLASSES (UNITTESTS)
-
+    def test_Assert1(self):
+        """ This is docstring for test_Assert1..."""
+        self.assertTrue(0, True)
+    
+    def test_AssertDoesObjectExistInDirectory(self):
+        """ This is docstring for test_AssertDoesObjectExistInDirectory..."""
+        self.assertTrue(os.path.exists, True)
+        
+    def test_AssertIsObjectFile(self):
+        """ This is docstring for AssertIsObjectFile..."""
+        self.assertTrue(os.path.isfile, True)
+        
        
-## BEGIN MAIN PROGRAM
-## BEGIN MAIN PROGRAM
-## BEGIN MAIN PROGRAM
-
-
-
-## END MAIN PROGRAM
-## END MAIN PROGRAM
-## END MAIN PROGRAM
-
-## GAME OVER
-## GAME OVER
-## GAME OVER
+## END DEFINE CLASSES (UNITTESTS)
+## END DEFINE CLASSES (UNITTESTS)
+## END DEFINE CLASSES (UNITTESTS)
 ```
 
 ## Task 2 - 
