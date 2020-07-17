@@ -10,7 +10,9 @@ This Step 0 will test if user input data are valid Tesla Numbers, i.e. if divisi
 
 In order to gain a better perspective and learn the essential testing concepts, we will first develop our tests using the `unittest` testing library.  We will then develop the same project with the third-party `pytest` testing library in order to compare testing philosophies, concepts, and features.
 
-`pytest` requires less boilerplate code than the built-in `unittest` testing library which comes as part of the Python Standard Library. 
+`pytest` requires less boilerplate code than the built-in `unittest` testing library which comes as part of the Python Standard Library:
+
+https://docs.python.org/3/library/
 
 The only dependency that is required for this project is installation of the `pytest` library.
 
@@ -31,5 +33,14 @@ https://www.youtube.com/watch?v=GnEWOYKgI4o
 You can do this project by completing the Project Tasks:
 
 https://github.com/DanielYohai/PluralsightProject0/blob/master/tasks.md
+
+# References
+
+#####Hellmann, D.;The Python 3 Standard Library by Example, 2017
+
+https://doughellmann.com/blog/the-python-3-standard-library-by-example/
+
+https://www.oreilly.com/library/view/the-python-3/9780134291154/
+
 
 
