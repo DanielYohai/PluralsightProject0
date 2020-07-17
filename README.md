@@ -36,7 +36,7 @@ https://github.com/DanielYohai/PluralsightProject0/blob/master/tasks.md
 
 # References
 
-#####Hellmann, D.;The Python 3 Standard Library by Example, 2017
+##### Hellmann, D.;The Python 3 Standard Library by Example, 2017
 
 https://doughellmann.com/blog/the-python-3-standard-library-by-example/
 
