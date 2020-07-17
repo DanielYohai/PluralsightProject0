@@ -19,6 +19,8 @@ Both commands should return output that is similar to the following, but will va
 
 If you do not see a message similar to the one above, then `pytest` wasn't installed properly, and you will need to troubleshoot and solve this issue before you can proceed with the Projects Tasks.
 
+As this project scales, it will be increasingly difficult to test things manually, and therefore we will first use `unittest` and then `pytest` to automate our unit testing.
+
 ## Task 1 - Create Python File `main.py`
 
 Begin your project by creating a Python file named `main.py` in the root folder of your project.
@@ -28,15 +30,57 @@ We will be using `unittest` to test for the existence of the files that we creat
 Within the file `main.py`, import the following `unittest` and `os` modules from the Python Standard Library:
 
 ```
+## BEGIN IMPORT MODULES
+## BEGIN IMPORT MODULES
+## BEGIN IMPORT MODULES
+
 import unittest
 import os
+
+## END IMPORT MODULES
+## END IMPORT MODULES
+## END IMPORT MODULES
+
+## BEGIN DECLARE VARIABLES
+## BEGIN DECLARE VARIABLES
+## BEGIN DECLARE VARIABLES
+
+## END DECLARE VARIABLES
+## END DECLARE VARIABLES
+## END DECLARE VARIABLES
+
+## BEGIN DEFINE FUNCTIONS
+## BEGIN DEFINE FUNCTIONS
+## BEGIN DEFINE FUNCTIONS
+
+## END DEFINE FUNCTIONS
+## END DEFINE FUNCTIONS
+## END DEFINE FUNCTIONS
+
+## BEGIN DEFINE CLASSES (UNITTESTS)
+## BEGIN DEFINE CLASSES (UNITTESTS)
+## BEGIN DEFINE CLASSES (UNITTESTS)
+    
+
+## END DEFINE CLASSES (UNITTESTS)
+## END DEFINE CLASSES (UNITTESTS)
+## END DEFINE CLASSES (UNITTESTS)
+
+       
+## BEGIN MAIN PROGRAM
+## BEGIN MAIN PROGRAM
+## BEGIN MAIN PROGRAM
+
+
+
+## END MAIN PROGRAM
+## END MAIN PROGRAM
+## END MAIN PROGRAM
+
+## GAME OVER
+## GAME OVER
+## GAME OVER
 ```
-
-
-
-However, as this project scales, it will be increasingly difficult to test things manually, and therefore we will first use `unittest` and then `pytest` to automate our unit testing.
-
-
 
 ## Task 2 - 
 
