@@ -8,7 +8,7 @@ Each step consists of a number of tasks - each of which will be unit tested.
 
 This Step 0 will test if user input data are valid Tesla Numbers, i.e. if divisible by 3.
 
-In order to make the project as simple as possible to understand and learn the essential testing concepts, we will be using the third-party `pytest` testing library.
+In order to gain a better perspective and learn the essential testing concepts, we will first develop our tests using the `unittest` testing library.  We will then develop the same project with the third-party `pytest` testing library in order to compare testing philosophies, concepts, and features.
 
 `pytest` requires less boilerplate code than the built-in `unittest` testing library which comes as part of the Python Standard Library. 
 
