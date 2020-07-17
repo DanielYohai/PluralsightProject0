@@ -36,6 +36,10 @@ https://docs.python.org/3/library/unittest.html
 
 The framework implemented by `unittest` supports fixtures, test suites, and a test runner to enable automated testing.(Hellman 2017: 1051)
 
+Here is a list of Assert Methods:
+
+https://docs.python.org/3/library/unittest.html#assert-methods
+
 
 # Basic Test Structure
 Tests, as defined by `unittest`, have two parts:
