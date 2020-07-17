@@ -30,7 +30,9 @@ https://www.youtube.com/watch?v=GnEWOYKgI4o
 
 # `unittest`
 
-The framework implemented by `unittest` supports fixtures, test suites, and a test runner to enable automated testing.(Hellman 2017: 1051)
+The `unittest` Unit Testing Framework is part of the Python Standard Library. The framework implemented by `unittest` supports fixtures, test suites, and a test runner to enable automated testing.(Hellman 2017: 1051)
+
+https://docs.python.org/3/library/unittest.html
 
 # Basic Test Structure
 Tests, as defined by `unittest`, have two parts:
