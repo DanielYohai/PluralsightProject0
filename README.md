@@ -44,7 +44,14 @@ Individual tests are created by subclassing `TestCase` and overriding or adding 
 
 # Running Tests
 The easiest way to run unittest tests is use the automatic discovery available through the command-line interface (CLI).(Hellman 2017: 1051)
+
 `python -m unittest test_unittests.py`
+
+For more detailed test results, include the -v option for more verbosity.
+(Hellman 2017: 1052)
+
+`python -m unittest -v test_unittests.py`
+
 
 # Project Tasks
 
