@@ -47,7 +47,7 @@ The easiest way to run unittest tests is use the automatic discovery available t
 
 `python -m unittest test_unittests.py`
 
-For more detailed test results, include the -v option for more verbosity.
+For more detailed test results, include the `-v` option for more verbosity.
 (Hellman 2017: 1052)
 
 `python -m unittest -v test_unittests.py`
