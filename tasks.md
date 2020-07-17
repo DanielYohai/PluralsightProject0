@@ -42,7 +42,7 @@ Run the program from your IDLE, IDE, or Command Line Interface (CLI), and you wi
 1000
 ```
 
-However, as this project scales, it will be increasingly difficult to test things manually, and therefore we will use `pytest` to automate our unit testing.
+However, as this project scales, it will be increasingly difficult to test things manually, and therefore we will first use `unittest` and then `pytest` to automate our unit testing.
 
 
 
