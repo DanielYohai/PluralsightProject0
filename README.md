@@ -49,7 +49,7 @@ Tests, as defined by `unittest`, have two parts:
   <li> the test itself.</li>
 </ol>
 
-Individual tests are created by subclassing `TestCase` and overriding or adding appropriate methods.(Hellman 2017: 1051)
+The basic building blocks of unit testing are test cases — single scenarios that must be set up and checked for correctness. In `unittest`, test cases are represented by `unittest.TestCase` instances. To make your own test cases you must write subclasses of `TestCase` or use `FunctionTestCase`.(Reference 2).  That is to say, individual tests are created by subclassing `TestCase` and overriding or adding appropriate methods.(Hellman 2017: 1051)
 
 # Running Tests
 The easiest way to run unittest tests is use the automatic discovery available through the command-line interface (CLI).(Hellman 2017: 1051)
@@ -61,6 +61,13 @@ For more detailed test results, include the `-v` option for more verbosity.
 
 `python -m unittest -v test_unittests.py`
 
+Alternatively, you can place the following code in your scripts so that tests are executed when the script is run:
+
+```
+if __name__ == '__main__':
+    unittest.main()
+```
+
 
 # Project Tasks
 
@@ -70,11 +77,13 @@ https://github.com/DanielYohai/PluralsightProject0/blob/master/tasks.md
 
 # References
 
-##### Hellmann, D.;The Python 3 Standard Library by Example, 2017
+##### 1.) Hellmann, D.;The Python 3 Standard Library by Example, 2017
 
 https://doughellmann.com/blog/the-python-3-standard-library-by-example/
 
 https://www.oreilly.com/library/view/the-python-3/9780134291154/
+
+##### 2.)  https://docs.python.org/3/library/unittest.html
 
 
 
