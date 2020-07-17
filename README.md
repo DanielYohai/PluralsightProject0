@@ -28,6 +28,24 @@ Nikola Tesla is reputed to have been fascinated unto the point of obsession with
 
 https://www.youtube.com/watch?v=GnEWOYKgI4o
 
+# `unittest`
+
+The framework implemented by `unittest` supports fixtures, test suites, and a test runner to enable automated testing.(Hellman 2017: 1051)
+
+# Basic Test Structure
+Tests, as defined by `unittest`, have two parts:
+
+<ol>
+  <li> code to manage test dependencies (called fixtures)</li>
+  <li> the test itself.</li>
+</ol>
+
+Individual tests are created by subclassing TestCase and overriding or adding appropriate methods.(Hellman 2017: 1051)
+
+# Running Tests
+The easiest way to run unittest tests is use the automatic discovery available through the command-line interface (CLI).(Hellman 2017: 1051)
+`python -m unittest test_unittests.py`
+
 # Project Tasks
 
 You can do this project by completing the Project Tasks:
