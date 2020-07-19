@@ -6,7 +6,15 @@ Each step will explore additional concepts and features of both Tesla Numbers as
 
 Each step consists of a number of tasks - each of which will be unit tested.
 
-This Step 0 will test if user input data are valid Tesla Numbers, i.e. if divisible by 3.
+This Step 0 will test if user input data are valid Tesla Numbers, i.e. if divisible by 3, i.e.:
+
+```
+if x % 3 == 0:
+  ## ...THEN x IS DIVISIBLE BY 3, AND THEREFORE A VALID TESLA NUMBER 
+
+else:
+  ## ...OTHERWISE x IS NOT DIVISIBLE BY 3, AND THEREFORE NOT A VALID TESLA NUMBER
+```
 
 In order to gain a better perspective and learn the essential testing concepts, we will first develop our tests using the `unittest` testing library.  Then we will develop the same project with the third-party `pytest` testing library in order to compare testing philosophies, concepts, and features.
 
