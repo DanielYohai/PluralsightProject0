@@ -97,7 +97,8 @@ def fn_IsObjectFile(NameOfFile):
 ## END DEFINE FUNCTIONS
 ```
 
-Next we will create a class to contain our unit tests.  Remember that tests in `unittest` are defined as methods of an instance of the the `unittest.Testcase` subclass.  
+Next we will create a class to contain our `unittest` unit tests.  Remember that tests in `unittest` are defined as methods of an instance of the the `unittest.Testcase` subclass, i.e. in this case `cls_Tests`.  The following `test` methods in our class use the `assertEqual` method of the `unittest.Testcase` subclass.  In the first parameter of each assert statement, they call the functions `fn_DoesObjectExist()` and `fn_IsObjectFile()` respectively that return Boolean Values `True` or `False`.  These returned values are then compared with the expected values of `True` (in the second parameter) if the file exists, and the test passes if so.
+
 ```
 ## BEGIN DEFINE CLASSES (UNITTESTS)
 ## BEGIN DEFINE CLASSES (UNITTESTS)
@@ -127,12 +128,6 @@ Finally, add the following code at the bottom below all other code in order to t
 
 if __name__ == "__main__":
 
-    ## CALL FUNCTION - CHECKS IF OBJECT EXISTS IN LOCAL FILE PATH
-    DoesObjectExist = fn_DoesObjectExist(NameOfFile)
-
-    ## CALL FUNCTION - CHECKS IF OBJECT IS OF TYPE FILE
-    IsObjectFile = fn_IsObjectFile(NameOfFile)
-
     ## EXECUTE UNIT TESTS
     unittest.main()
 
@@ -147,7 +142,18 @@ if __name__ == "__main__":
 
 ```
 
-Now run the program, 
+Now run the program, and you should see the following message which tells us that the tests have passed:
+
+```
+DoesObjectExist =  True
+.IsObjectFile =  True
+.
+----------------------------------------------------------------------
+Ran 2 tests in 0.018s
+
+OK
+>>> 
+```
 
 
 ```
