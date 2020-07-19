@@ -99,7 +99,11 @@ def fn_IsObjectFile(NameOfFile):
 
 Next we will create a class to contain our `unittest` unit tests.  Remember that tests in `unittest` are defined as methods of an instance of the the `unittest.Testcase` subclass, i.e. in this case `cls_Tests`.  
 
-The following `test` methods in our class use the `assertEqual` method of the `unittest.Testcase` subclass.  In the first parameter of each assert statement, it calls the functions `fn_DoesObjectExist()` and `fn_IsObjectFile()` respectively that each return Boolean values of `True` or `False`.  These values that are returned to the `test_` methods that call them, and are compared with the expected values of `True` that are contained in the second parameter.
+The following `test` methods in our class use the `assertEqual()` method of the `unittest.Testcase` subclass.  In the first parameter of each assert statement, it calls the functions `fn_DoesObjectExist()` and `fn_IsObjectFile()` respectively that each return Boolean values of `True` or `False`.  These values that are returned to the `test_` methods that call them, and are compared with the expected values of `True` that are contained in the second parameter.
+
+Here is a list of `unittest`'s Assert Methods:
+
+https://docs.python.org/3/library/unittest.html#assert-methods
 
 If the file `main.py` exists, then these first two tests will pass.
 
@@ -159,13 +163,17 @@ OK
 >>> 
 ```
 
-Remember that you can run these unit tests from the Command Line Interface (CLI).
+Remember that you can run these unit tests from the Command Line Interface (CLI) with or without the `-v` option for more verbosity.
 
 Test the program from your CLI with `unittest`.
+
+`python -m unittest main.py`
 
 `python -m unittest -v main.py`
 
 Alternatively, you can test the same program with `pytest` and the results message will be similar (yet not identical) to the one returned by `unittest`.
+
+`python -m pytest main.py`
 
 `python -m pytest -v main.py`
 
