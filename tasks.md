@@ -44,9 +44,9 @@ import os
 ## END IMPORT MODULES
 ```
 
-A testcase is created by subclassing `unittest.TestCase`.  Individual tests are defined with methods whose names start with the letters `test`.  This naming convention informs the test runner about which methods represent tests.(Reference 2)
+A Test Case is created by subclassing `unittest.TestCase`.  Individual tests are defined with methods whose names start with the letters `test`.  This naming convention informs the Test Runner about which methods represent tests.(Reference 2)
 
-Let's create our first testcase with tests to confirm the existence of the file `main.py`.
+Let's create our first Test Case with tests to confirm the existence of the file `main.py`.
 
 Within the file `main.py`, add the following code below the section where you imported modules:
 
@@ -62,7 +62,7 @@ NameOfFile = "main.py"
 ## END DECLARE VARIABLES
 ```
 
-Then we will create two custom functions with two built-in Python functions that will 1.) check for the existence of an object within your local file path; and 2.) check if an object is of type file.  Both functions from the `os` library return Boolean values `True` or `False`.
+Then, using two built-in Python functions from the `os` library, we will create two custom functions in order to 1.) check for the existence of an object within your local file path; and 2.) check if an object is of type file.  Both functions from the `os` library return Boolean values `True` or `False`.
 
 ```
 ## BEGIN DEFINE FUNCTIONS
@@ -97,7 +97,11 @@ def fn_IsObjectFile(NameOfFile):
 ## END DEFINE FUNCTIONS
 ```
 
-Next we will create a class to contain our `unittest` unit tests.  Remember that tests in `unittest` are defined as methods of an instance of the the `unittest.Testcase` subclass, i.e. in this case `cls_Tests`.  The following `test` methods in our class use the `assertEqual` method of the `unittest.Testcase` subclass.  In the first parameter of each assert statement, they call the functions `fn_DoesObjectExist()` and `fn_IsObjectFile()` respectively that return Boolean Values `True` or `False`.  These returned values are then compared with the expected values of `True` (in the second parameter) if the file exists, and the test passes if so.
+Next we will create a class to contain our `unittest` unit tests.  Remember that tests in `unittest` are defined as methods of an instance of the the `unittest.Testcase` subclass, i.e. in this case `cls_Tests`.  
+
+The following `test` methods in our class use the `assertEqual` method of the `unittest.Testcase` subclass.  In the first parameter of each assert statement, it calls the functions `fn_DoesObjectExist()` and `fn_IsObjectFile()` respectively that each return Boolean values of `True` or `False`.  These values that are returned to the `test_` methods that call them, and are compared with the expected values of `True` that are contained in the second parameter.
+
+If the file exists, then these first two tests pass.
 
 ```
 ## BEGIN DEFINE CLASSES (UNITTESTS)
