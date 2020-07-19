@@ -26,7 +26,7 @@ Another great advantage of `pytest` is it can run the tests that you develop in 
 
 https://docs.pytest.org/en/3.0.1/unittest.html
 
-Almost all `unittest` features are supported:
+Almost all `unittest` features are supported in `pytest`:
 
 https://docs.pytest.org/en/stable/unittest.html
 
