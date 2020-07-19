@@ -6,10 +6,10 @@ Each step will explore additional concepts and features of both Tesla Numbers as
 
 Each step consists of a number of tasks - each of which will be unit tested.
 
-This Step 0 will test if user input data are valid Tesla Numbers, i.e. if divisible by 3, i.e.:
+This Step 0 will begin by testing if input data are valid Tesla Numbers by the `%` MODULO operation, i.e. if divisible by 3, i.e.:
 
 ```
-if x % 3 == 0:
+if x % 3 == 0: ## IF x % (MODULO, i.e. DIVIDED BY) 3 LEAVES A REMAINDER OF 0 (ZERO)...
   ## ...THEN x IS DIVISIBLE BY 3, AND THEREFORE A VALID TESLA NUMBER 
 
 else:
