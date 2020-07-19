@@ -254,9 +254,9 @@ if __name__ == "__main__":
 ## GAME OVER
 ```
 
-Let's continue our project by creating a Python file named `__init__` in the same root folder of your project where we just created the `main.py` file.
+Let's continue our project by creating a Python file named `__init__`.py in the same root folder of your project where we just created the `main.py` file.  The `__init__.py` file makes the directory a Python package with all the features and benefits that this entails.
 
-Within our `unittest.Testcase` subclass `cls_Tests()`, create two more tests.  Change the `assert` statement to be `assertTrue()`, and use a text string "__init__.py" as the value for the first parameter.
+Within our `unittest.Testcase` subclass `cls_Tests()`, create two more tests.  Change the `assert` statement to be `assertTrue()`, and use a text string `"__init__.py"` as the value for the first parameter.
 
 ```
 ## BEGIN DEFINE CLASSES (UNITTESTS)
