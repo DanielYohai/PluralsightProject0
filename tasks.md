@@ -328,7 +328,7 @@ OK
 
 So far we have created tests that have all passed.  Now let's intentionally create a test that fails in order to examine the test results message.
 
-Within our `unittest.Testcase` subclass `cls_Tests()`, create two more tests.  Change the `assert` statement to be `assertTrue()`, and use a text string `"NoFile.py"` as the value for the first parameter to test and compare with the value of the second parameter (which is what we expect to be returned from a successful unit test.
+Within our `unittest.Testcase` subclass `cls_Tests()`, create two more tests.  Change the `assertEqual()` assertion to be `assertTrue()`, and use a text string `"NoFile.py"` as the value for the first parameter to test and compare with the value of the second parameter (which is what we expect to be returned from a successful unit test).
 
 ```
 ## BEGIN DEFINE CLASSES (UNITTESTS)
