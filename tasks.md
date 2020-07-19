@@ -71,8 +71,11 @@ Then we will create two built-in Python functions that will 1.) check for the ex
 
 def fn_DoesObjectExist(NameOfFile):
 
-    ## CALL FUNCTION
+    ## CALL FUNCTION - CHECKS IF OBJECT EXISTS IN LOCAL FILE PATH 
     DoesObjectExist = os.path.exists(NameOfFile)
+
+    ## TEST - PRINT OUTPUT TO CONSOLE
+    print("DoesObjectExist = ", DoesObjectExist)
 
     ## RETURN VARIABLE --> BOOLEAN TRUE or FALSE
     return(DoesObjectExist)
@@ -80,9 +83,12 @@ def fn_DoesObjectExist(NameOfFile):
 
 def fn_IsObjectFile(NameOfFile):
 
-    ## CALL FUNCTION
+    ## CALL FUNCTION - CHECKS IF OBJECT IS OF TYPE FILE
     IsObjectFile = os.path.isfile(NameOfFile)
-    
+
+    ## TEST - PRINT OUTPUT TO CONSOLE
+    print("IsObjectFile = ", IsObjectFile)
+
     ## RETURN VARIABLE --> BOOLEAN TRUE or FALSE
     return(IsObjectFile)
 
