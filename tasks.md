@@ -254,6 +254,52 @@ if __name__ == "__main__":
 ## GAME OVER
 ```
 
+Let's continue our project by creating a Python file named `__init__` in the same root folder of your project where we just created the `main.py` file.
+
+Within our `unittest.Testcase` subclass `cls_Tests()`, create two more tests.  Change the `assert` statement to be `assertTrue()`, and use a text string "__init__.py" as the value for the first parameter.
+
+## BEGIN DEFINE CLASSES (UNITTESTS)
+## BEGIN DEFINE CLASSES (UNITTESTS)
+## BEGIN DEFINE CLASSES (UNITTESTS)
+    
+class cls_Tests(unittest.TestCase):
+    """ This is docstring for the class cls_Tests..."""
+      
+    def test_1A_AssertDoesObjectExist(self):
+        """ This is docstring for test_1A_AssertDoesObjectExist..."""
+        self.assertEqual(fn_DoesObjectExist(NameOfFile), True)
+        
+    def test_1B_AssertIsObjectFile(self):
+        """ This is docstring for test_1B_AssertIsObjectFile..."""
+        self.assertEqual(fn_IsObjectFile(NameOfFile), True)
+
+    def test_2A_AssertDoesObjectExist(self):
+        """ This is docstring for test_2A_AssertDoesObjectExist..."""
+        self.assertTrue(fn_DoesObjectExist("__init__.py"), True)
+        
+    def test_2B_AssertIsObjectFile(self):
+        """ This is docstring for test_2B_AssertIsObjectFile..."""
+        self.assertTrue(fn_IsObjectFile("__init__.py"), True)
+
+## END DEFINE CLASSES (UNITTESTS)
+## END DEFINE CLASSES (UNITTESTS)
+## END DEFINE CLASSES (UNITTESTS) 
+
+Run your script again, and you should see message similar to the following:
+
+```
+DoesObjectExist =  True
+.IsObjectFile =  True
+.DoesObjectExist =  True
+.IsObjectFile =  True
+.
+----------------------------------------------------------------------
+Ran 4 tests in 0.034s
+
+OK
+>>> 
+```
+
 ## Task 3 - 
 
 
