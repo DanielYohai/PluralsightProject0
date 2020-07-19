@@ -100,7 +100,7 @@ def fn_IsObjectFile(NameOfFile):
 
 Next we will create a class to contain our `unittest` unit tests.  Remember that tests in `unittest` are defined as methods of an instance of the the `unittest.Testcase` subclass, i.e. in this case `cls_Tests`.  
 
-The following `test` methods in our class use the `assertEqual()` method of the `unittest.Testcase` subclass.  In the first parameter of each assert statement, it calls the functions `fn_DoesObjectExist()` and `fn_IsObjectFile()` respectively that each return Boolean values of `True` or `False`.  These values that are returned to the `test_` methods that call them, and are compared with the expected values of `True` that are contained in the second parameter.
+The following `test` methods in our class use the `assertEqual()` method of the `unittest.Testcase` subclass.  In the first parameter of each assert statement, it calls the functions `fn_DoesObjectExist()` and `fn_IsObjectFile()` respectively that each return Boolean values of `True` or `False`.  These values that are returned to the `test_` methods that call them, and are compared with the expected values of `True` or `False` that are contained in the second parameter.
 
 Here is a list of `unittest`'s Assert Methods:
 
