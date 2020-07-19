@@ -27,7 +27,7 @@ Begin your project by creating a Python file named `main.py` in the root folder 
 
 We will be using `unittest` to test for the existence of the files that we create.
 
-Within the file `main.py`, import the following `unittest` and `os` modules from the Python Standard Library:
+Within the file `main.py`, import both the `unittest` and `os` modules from the Python Standard Library, as we will be exploring some features of how Python interacts with your local computer file system.
 
 ```
 ## BEGIN IMPORT MODULES
@@ -48,6 +48,43 @@ Let's create our first testcase with tests to confirm the existence of the file 
 
 Within the file `main.py`, add the following code below the section where you imported modules:
 
+``` 
+## BEGIN DECLARE VARIABLES
+## BEGIN DECLARE VARIABLES
+## BEGIN DECLARE VARIABLES
+
+NameOfFile = "main.py"
+
+## END DECLARE VARIABLES
+## END DECLARE VARIABLES
+## END DECLARE VARIABLES
+```
+
+Next
+
+```
+## BEGIN DEFINE FUNCTIONS
+## BEGIN DEFINE FUNCTIONS
+## BEGIN DEFINE FUNCTIONS
+
+def fn_DoesObjectExist(NameOfFile):
+
+    DoesObjectExist = os.path.exists(NameOfFile)
+
+    return(DoesObjectExist)
+
+
+def fn_IsObjectFile(NameOfFile):
+
+    IsObjectFile = os.path.isfile(NameOfFile)
+    
+    return(IsObjectFile)
+
+## END DEFINE FUNCTIONS
+## END DEFINE FUNCTIONS
+## END DEFINE FUNCTIONS
+```
+
 ```
 ## BEGIN DEFINE CLASSES (UNITTESTS)
 ## BEGIN DEFINE CLASSES (UNITTESTS)
@@ -60,25 +97,17 @@ class cls_Tests(unittest.TestCase):
         """ This is docstring for setUp method...
         Method called to prepare the test fixture.
         This is called immediately before calling the test method."""
+        
         pass
         
     def tearDown(self):
         """ This is docstring for tearDown method...
         Method called immediately after the test method has been
         called and the result recorded."""
+        
         pass
 
-    def test_Assert1(self):
-        """ This is docstring for test_Assert1..."""
-        self.assertTrue(0, True)
-    
-    def test_AssertDoesObjectExistInDirectory(self):
-        """ This is docstring for test_AssertDoesObjectExistInDirectory..."""
-        self.assertTrue(os.path.exists, True)
-        
-    def test_AssertIsObjectFile(self):
-        """ This is docstring for AssertIsObjectFile..."""
-        self.assertTrue(os.path.isfile, True)
+
         
        
 ## END DEFINE CLASSES (UNITTESTS)
