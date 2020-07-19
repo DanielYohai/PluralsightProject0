@@ -62,7 +62,7 @@ NameOfFile = "main.py"
 ## END DECLARE VARIABLES
 ```
 
-Then we will create two built-in Python functions that will 1.) check for the existence of an object within your local file path; and 2.) check if an object is of type file.  Both functions from the `os` library return Boolean values `True` or `False`.
+Then we will create two custom functions with two built-in Python functions that will 1.) check for the existence of an object within your local file path; and 2.) check if an object is of type file.  Both functions from the `os` library return Boolean values `True` or `False`.
 
 ```
 ## BEGIN DEFINE FUNCTIONS
@@ -74,7 +74,7 @@ def fn_DoesObjectExist(NameOfFile):
     ## CALL FUNCTION - CHECKS IF OBJECT EXISTS IN LOCAL FILE PATH 
     DoesObjectExist = os.path.exists(NameOfFile)
 
-    ## TEST - PRINT OUTPUT TO CONSOLE
+    ## TEST - PRINT OUTPUT TO CONSOLE - THIS WILL GIVE US VISUAL CONFIRMATION THAT THIS FUNCTION WAS CALLED
     print("DoesObjectExist = ", DoesObjectExist)
 
     ## RETURN VARIABLE --> BOOLEAN TRUE or FALSE
@@ -86,7 +86,7 @@ def fn_IsObjectFile(NameOfFile):
     ## CALL FUNCTION - CHECKS IF OBJECT IS OF TYPE FILE
     IsObjectFile = os.path.isfile(NameOfFile)
 
-    ## TEST - PRINT OUTPUT TO CONSOLE
+    ## TEST - PRINT OUTPUT TO CONSOLE - THIS WILL GIVE US VISUAL CONFIRMATION THAT THIS FUNCTION WAS CALLED
     print("IsObjectFile = ", IsObjectFile)
 
     ## RETURN VARIABLE --> BOOLEAN TRUE or FALSE
@@ -108,11 +108,11 @@ class cls_Tests(unittest.TestCase):
       
     def test_1A_AssertDoesObjectExist(self):
         """ This is docstring for test_1A_AssertDoesObjectExist..."""
-        self.assertEqual(fn_DoesObjectExist("main.py"), True)
+        self.assertEqual(fn_DoesObjectExist(NameOfFile), True)
         
     def test_1B_AssertIsObjectFile(self):
         """ This is docstring for test_1B_AssertIsObjectFile..."""
-        self.assertEqual(fn_IsObjectFile("main.py"), True)
+        self.assertEqual(fn_IsObjectFile(NameOfFile), True)
 
 ## END DEFINE CLASSES (UNITTESTS)
 ## END DEFINE CLASSES (UNITTESTS)
