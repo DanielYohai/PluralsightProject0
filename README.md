@@ -22,6 +22,12 @@ In order to gain a better perspective and learn the essential testing concepts -
 
 https://docs.python.org/3/library/
 
+Another great advantage of `pytest` is it can run the tests that you develop in `unittest`.  Concretely, `pytest` will automatically collect `unittest.TestCase` subclasses and their test methods in test files.  You should be able to run your `unittest`-style tests if they are contained in `test_*` modules [i.e. Python files]. If that works for you then you can make use of most `pytest` features.
+
+https://docs.pytest.org/en/3.0.1/unittest.html
+
+
+
 The only dependency that is required for this project is installation of the third-party `pytest` library.
 
 https://docs.pytest.org/en/stable/getting-started.html
