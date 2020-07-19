@@ -144,10 +144,9 @@ if __name__ == "__main__":
 ## GAME OVER
 ## GAME OVER
 ## GAME OVER
-
 ```
 
-Now run the program, and you should see the following message which tells us that the tests have passed:
+Now run the program, and you should see a message similar to the following which tells us that the tests have passed:
 
 ```
 DoesObjectExist =  True
@@ -160,7 +159,98 @@ OK
 >>> 
 ```
 
+## Task 2
 
+```
+## BEGIN IMPORT MODULES
+## BEGIN IMPORT MODULES
+## BEGIN IMPORT MODULES
+
+import unittest
+import os
+
+## END IMPORT MODULES
+## END IMPORT MODULES
+## END IMPORT MODULES
+
+## BEGIN DECLARE VARIABLES
+## BEGIN DECLARE VARIABLES
+## BEGIN DECLARE VARIABLES
+
+NameOfFile = "main.py"
+
+## END DECLARE VARIABLES
+## END DECLARE VARIABLES
+## END DECLARE VARIABLES
+
+## BEGIN DEFINE FUNCTIONS
+## BEGIN DEFINE FUNCTIONS
+## BEGIN DEFINE FUNCTIONS
+
+def fn_DoesObjectExist(NameOfFile):
+
+    ## CALL FUNCTION - CHECKS IF OBJECT EXISTS IN LOCAL FILE PATH 
+    DoesObjectExist = os.path.exists(NameOfFile)
+
+    ## TEST - PRINT OUTPUT TO CONSOLE - THIS WILL GIVE US VISUAL CONFIRMATION THAT THIS FUNCTION WAS CALLED
+    print("DoesObjectExist = ", DoesObjectExist)
+
+    ## RETURN VARIABLE --> BOOLEAN TRUE or FALSE
+    return(DoesObjectExist)
+
+
+def fn_IsObjectFile(NameOfFile):
+
+    ## CALL FUNCTION - CHECKS IF OBJECT IS OF TYPE FILE
+    IsObjectFile = os.path.isfile(NameOfFile)
+
+    ## TEST - PRINT OUTPUT TO CONSOLE - THIS WILL GIVE US VISUAL CONFIRMATION THAT THIS FUNCTION WAS CALLED
+    print("IsObjectFile = ", IsObjectFile)
+
+    ## RETURN VARIABLE --> BOOLEAN TRUE or FALSE
+    return(IsObjectFile)
+
+## END DEFINE FUNCTIONS
+## END DEFINE FUNCTIONS
+## END DEFINE FUNCTIONS
+
+## BEGIN DEFINE CLASSES (UNITTESTS)
+## BEGIN DEFINE CLASSES (UNITTESTS)
+## BEGIN DEFINE CLASSES (UNITTESTS)
+    
+class cls_Tests(unittest.TestCase):
+    """ This is docstring for the class cls_Tests..."""
+      
+    def test_1A_AssertDoesObjectExist(self):
+        """ This is docstring for test_1A_AssertDoesObjectExist..."""
+        self.assertEqual(fn_DoesObjectExist(NameOfFile), True)
+        
+    def test_1B_AssertIsObjectFile(self):
+        """ This is docstring for test_1B_AssertIsObjectFile..."""
+        self.assertEqual(fn_IsObjectFile(NameOfFile), True)
+
+## END DEFINE CLASSES (UNITTESTS)
+## END DEFINE CLASSES (UNITTESTS)
+## END DEFINE CLASSES (UNITTESTS)
+
+## BEGIN MAIN PROGRAM
+## BEGIN MAIN PROGRAM
+## BEGIN MAIN PROGRAM
+
+if __name__ == "__main__":
+
+    ## EXECUTE UNIT TESTS
+    unittest.main()
+
+    
+## END MAIN PROGRAM
+## END MAIN PROGRAM
+## END MAIN PROGRAM
+
+## GAME OVER
+## GAME OVER
+## GAME OVER
+```
 
 ## Task X - 
 
