@@ -22,13 +22,15 @@ else:
   ## ...OTHERWISE x IS NOT DIVISIBLE BY 3, AND THEREFORE NOT A VALID TESLA NUMBER
 ```
 
-In order to gain a better perspective and learn the essential testing concepts - for each step and task in the project - we will first develop our tests using the `unittest` testing library.  Then we will develop the same steps and tasks a second time (i.e. practice!!) with the third-party `pytest` testing library in order to compare testing philosophies, concepts, and features.
+However, first we must create modules (i.e. Python files) as a workspace to do our calculations, and we will use both `unittest` and `pytest` to confirm the creation and existence of the files that we create.  
+
+In order to gain a better perspective and learn the essential testing concepts - for each step and task in the project - we will first develop our tests using the `unittest` testing library.  Later we will develop the same steps and tasks a second time (i.e. practice!!) with the third-party `pytest` testing library in order to compare testing philosophies, concepts, and features.
 
 `pytest` requires less boilerplate code than the built-in `unittest` testing library which comes as part of the Python Standard Library.  This library contains built-in modules written in Python that provide standardized solutions for many problems that occur in everyday programming.
 
 https://docs.python.org/3/library/
 
-Another great advantage of `pytest` is it can run the tests that you develop in `unittest`, and `pytest` supports running Python `unittest`-based tests out of the box.   Concretely, `pytest` will automatically collect `unittest.TestCase` subclasses and their `test` methods in `test` files.  You should be able to run your `unittest`-style tests if they are contained in `test_*.py` or `*_test.py` modules [i.e. Python files]. Thus, it's possible to leverage existing `unittest`-based test suites by using `pytest` as a test runner which also allows to incrementally adapt the test suite to take full advantage of `pytest`'s features.  If that works for you then you can make use of most `pytest` features.
+Another great advantage of `pytest` is it can run the tests that you develop in `unittest`, and `pytest` supports running Python `unittest`-based tests out of the box.   Concretely, `pytest` will automatically collect `unittest.TestCase` subclasses and their `test` methods in `test` files.  You should be able to run your `unittest`-style tests if they are contained in `test_*.py` or `*_test.py` modules [i.e. Python files]. Thus, it's possible to leverage existing `unittest`-based test suites by using `pytest` as a Test Runner which also allows to incrementally adapt the Test Suite to take full advantage of `pytest`'s features.  If that works for you then you can make use of most of these `pytest` features.
 
 https://docs.pytest.org/en/3.0.1/unittest.html
 
