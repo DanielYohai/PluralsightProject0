@@ -258,6 +258,7 @@ Let's continue our project by creating a Python file named `__init__` in the sam
 
 Within our `unittest.Testcase` subclass `cls_Tests()`, create two more tests.  Change the `assert` statement to be `assertTrue()`, and use a text string "__init__.py" as the value for the first parameter.
 
+```
 ## BEGIN DEFINE CLASSES (UNITTESTS)
 ## BEGIN DEFINE CLASSES (UNITTESTS)
 ## BEGIN DEFINE CLASSES (UNITTESTS)
@@ -283,7 +284,8 @@ class cls_Tests(unittest.TestCase):
 
 ## END DEFINE CLASSES (UNITTESTS)
 ## END DEFINE CLASSES (UNITTESTS)
-## END DEFINE CLASSES (UNITTESTS) 
+## END DEFINE CLASSES (UNITTESTS)
+```
 
 Run your script again, and you should see message similar to the following:
 
