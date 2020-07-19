@@ -29,7 +29,7 @@ Begin your project by creating a Python file named `main.py` in the root folder 
 
 We will be using `unittest` to test for the existence of the files that we create.
 
-Within the file `main.py`, import both the `unittest` and `os` modules from the Python Standard Library, as well as `pytest` that you just downloaded and installed on your local computer. We will be exploring some features of how Python interacts with your local computer file system.
+Within the file `main.py`, import both the `unittest` and `os` modules from the Python Standard Library as we will be exploring some features of how Python interacts with your local computer file system.  It will also be necessary to import `pytest` that you just downloaded and installed on your local computer.
 
 ```
 ## BEGIN IMPORT MODULES
@@ -37,6 +37,7 @@ Within the file `main.py`, import both the `unittest` and `os` modules from the 
 ## BEGIN IMPORT MODULES
 
 import unittest
+import pytest
 import os
 
 ## END IMPORT MODULES
@@ -189,6 +190,7 @@ Currently, a view of the entire code script should look like this:
 ## BEGIN IMPORT MODULES
 
 import unittest
+import pytest
 import os
 
 ## END IMPORT MODULES
@@ -364,6 +366,46 @@ class cls_Tests(unittest.TestCase):
 ## END DEFINE CLASSES (UNITTESTS)
 ## END DEFINE CLASSES (UNITTESTS)
 ```
+
+## Task 4 - Modify the Test to Pass; `self.assertTrue()`; `self.assertFalse()`
+
+```
+## BEGIN DEFINE CLASSES (UNITTESTS)
+## BEGIN DEFINE CLASSES (UNITTESTS)
+## BEGIN DEFINE CLASSES (UNITTESTS)
+    
+class cls_Tests(unittest.TestCase):
+    """ This is docstring for the class cls_Tests..."""
+      
+    def test_1A_AssertDoesObjectExist(self):
+        """ This is docstring for test_1A_AssertDoesObjectExist..."""
+        self.assertEqual(fn_DoesObjectExist(NameOfFile), True)
+        
+    def test_1B_AssertIsObjectFile(self):
+        """ This is docstring for test_1B_AssertIsObjectFile..."""
+        self.assertEqual(fn_IsObjectFile(NameOfFile), True)
+
+    def test_2A_AssertDoesObjectExist(self):
+        """ This is docstring for test_2A_AssertDoesObjectExist..."""
+        self.assertTrue(fn_DoesObjectExist("__init__.py"), True)
+        
+    def test_2B_AssertIsObjectFile(self):
+        """ This is docstring for test_2B_AssertIsObjectFile..."""
+        self.assertTrue(fn_IsObjectFile("__init__.py"), True)
+
+    def test_3A_AssertDoesObjectExist(self):
+        """ This is docstring for test_3A_AssertDoesObjectExist..."""
+        self.assertFalse(fn_DoesObjectExist("NoFile.py"), False)
+        
+    def test_3B_AssertIsObjectFile(self):
+        """ This is docstring for test_3B_AssertIsObjectFile..."""
+        self.assertFalse(fn_IsObjectFile("NoFile.py"), False)
+
+## END DEFINE CLASSES (UNITTESTS)
+## END DEFINE CLASSES (UNITTESTS)
+## END DEFINE CLASSES (UNITTESTS)
+```
+
 
 
 ## Task X - 
