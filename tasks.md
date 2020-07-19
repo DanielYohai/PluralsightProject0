@@ -314,7 +314,48 @@ OK
 >>> 
 ```
 
-## Task 3 - 
+## Task 3 - Create a Test that Fails; `self.assertTrue()`; `self.assertFalse()`
+
+So far we have created tests that have all passed.  Now let's intentionally create a test that fails in order to examine the test results message.
+
+Within our `unittest.Testcase` subclass `cls_Tests()`, create two more tests.  Change the `assert` statement to be `assertTrue()`, and use a text string `"NoFile.py"` as the value for the first parameter to test.
+
+```
+## BEGIN DEFINE CLASSES (UNITTESTS)
+## BEGIN DEFINE CLASSES (UNITTESTS)
+## BEGIN DEFINE CLASSES (UNITTESTS)
+    
+class cls_Tests(unittest.TestCase):
+    """ This is docstring for the class cls_Tests..."""
+      
+    def test_1A_AssertDoesObjectExist(self):
+        """ This is docstring for test_1A_AssertDoesObjectExist..."""
+        self.assertEqual(fn_DoesObjectExist(NameOfFile), True)
+        
+    def test_1B_AssertIsObjectFile(self):
+        """ This is docstring for test_1B_AssertIsObjectFile..."""
+        self.assertEqual(fn_IsObjectFile(NameOfFile), True)
+
+    def test_2A_AssertDoesObjectExist(self):
+        """ This is docstring for test_2A_AssertDoesObjectExist..."""
+        self.assertTrue(fn_DoesObjectExist("__init__.py"), True)
+        
+    def test_2B_AssertIsObjectFile(self):
+        """ This is docstring for test_2B_AssertIsObjectFile..."""
+        self.assertTrue(fn_IsObjectFile("__init__.py"), True)
+
+    def test_3A_AssertDoesObjectExist(self):
+        """ This is docstring for test_3A_AssertDoesObjectExist..."""
+        self.assertTrue(fn_DoesObjectExist("NoFile.py"), True)
+        
+    def test_3B_AssertIsObjectFile(self):
+        """ This is docstring for test_3B_AssertIsObjectFile..."""
+        self.assertTrue(fn_IsObjectFile("NoFile.py"), True)
+
+## END DEFINE CLASSES (UNITTESTS)
+## END DEFINE CLASSES (UNITTESTS)
+## END DEFINE CLASSES (UNITTESTS)
+```
 
 
 ## Task X - 
