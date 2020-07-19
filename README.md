@@ -50,7 +50,9 @@ The `unittest` Unit Testing Framework is part of the Python Standard Library.
 
 https://docs.python.org/3/library/unittest.html
 
-The framework implemented by `unittest` supports fixtures, test suites, and a test runner to enable automated testing.(Hellman 2017: 1051)
+The framework implemented by `unittest` supports fixtures, test suites, and a test runner to enable automated testing.(Hellman 2017: 1051) `unittest' supports some important concepts in an object-oriented way such as Test Fixture, Test Case, Test Suite, Test Runner:
+
+https://docs.python.org/3/library/unittest.html
 
 Here is a list of Assert Methods:
 
