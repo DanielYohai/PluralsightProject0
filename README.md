@@ -1,3 +1,9 @@
+# Project Tasks
+
+You can do this project by completing the Project Tasks:
+
+https://github.com/DanielYohai/PluralsightProject0/blob/master/tasks.md
+
 # Project Overview
 
 This project is the beginning (i.e. Step 0) of a multi-step, scalable project that explores the qualities and interesting phenomena of "Tesla Numbers", i.e. numbers divisible by 3, e.g. 3, 6, 9, 12, 15, 18, etc.
@@ -89,7 +95,6 @@ Alternatively, you can place the following code in your scripts so that tests ar
 if __name__ == '__main__':
     unittest.main()
 ```
-
 
 # Project Tasks
 
