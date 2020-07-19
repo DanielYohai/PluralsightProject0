@@ -16,7 +16,7 @@ else:
   ## ...OTHERWISE x IS NOT DIVISIBLE BY 3, AND THEREFORE NOT A VALID TESLA NUMBER
 ```
 
-In order to gain a better perspective and learn the essential testing concepts, we will first develop our tests using the `unittest` testing library.  Then we will develop the same project with the third-party `pytest` testing library in order to compare testing philosophies, concepts, and features.
+In order to gain a better perspective and learn the essential testing concepts - for each step and task in the project - we will first develop our tests using the `unittest` testing library.  Then we will develop the same steps and tasks a second time (i.e. practice!!) with the third-party `pytest` testing library in order to compare testing philosophies, concepts, and features.
 
 `pytest` requires less boilerplate code than the built-in `unittest` testing library which comes as part of the Python Standard Library.  This library contains built-in modules written in Python that provide standardized solutions for many problems that occur in everyday programming.
 
