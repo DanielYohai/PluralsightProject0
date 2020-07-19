@@ -159,6 +159,18 @@ OK
 >>> 
 ```
 
+Remember that you can run these unit tests from the Command Line Interface (CLI).
+
+Test the program from your CLI with `unittest`.
+
+`python -m unittest -v main.py`
+
+Alternatively, you can test the same program with `pytest`.
+
+`python -m pytest -v main.py`
+
+
+
 ## Task 2 - Create Python File `__init__.py`; `self.assertTrue()`
 
 Currently, a view of the entire code script should look like this:
