@@ -101,7 +101,7 @@ Next we will create a class to contain our `unittest` unit tests.  Remember that
 
 The following `test` methods in our class use the `assertEqual` method of the `unittest.Testcase` subclass.  In the first parameter of each assert statement, it calls the functions `fn_DoesObjectExist()` and `fn_IsObjectFile()` respectively that each return Boolean values of `True` or `False`.  These values that are returned to the `test_` methods that call them, and are compared with the expected values of `True` that are contained in the second parameter.
 
-If the file exists, then these first two tests will pass.
+If the file `main.py` exists, then these first two tests will pass.
 
 ```
 ## BEGIN DEFINE CLASSES (UNITTESTS)
