@@ -23,7 +23,7 @@ As this project scales, it will be increasingly difficult to test things manuall
 
 As we encounter programming issues, we will refactor our code as necessary.
 
-## Task 1 - Create Python File `main.py`
+## Task 1 - Create Python File `main.py`; `self.assertEqual()`
 
 Begin your project by creating a Python file named `main.py` in the root folder of your project.
 
@@ -159,9 +159,9 @@ OK
 >>> 
 ```
 
-## Task 2 - Create Python File `__init__.py`
+## Task 2 - Create Python File `__init__.py`; `self.assertTrue()`
 
-A view of the entire code should look like this:
+Currently, a view of the entire code script should look like this:
 
 ```
 ## BEGIN IMPORT MODULES
@@ -253,6 +253,9 @@ if __name__ == "__main__":
 ## GAME OVER
 ## GAME OVER
 ```
+
+## Task 3 - 
+
 
 ## Task X - 
 
