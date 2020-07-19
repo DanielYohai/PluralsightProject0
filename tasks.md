@@ -21,6 +21,8 @@ If you do not see a message similar to the one above, then `pytest` wasn't insta
 
 As this project scales, it will be increasingly difficult to test things manually, and therefore we will first use `unittest` and then `pytest` to automate our unit testing throughout.
 
+As we encounter programming issues, we will refactor our code as necessary.
+
 ## Task 1 - Create Python File `main.py`
 
 Begin your project by creating a Python file named `main.py` in the root folder of your project.
@@ -60,7 +62,7 @@ NameOfFile = "main.py"
 ## END DECLARE VARIABLES
 ```
 
-Next
+Then we will create two built-in Python functions that will 1.) check for the existence of an object within your local file path; and 2.) check if an object is of type file.  Both functions from the `os` library return Boolean values `True` or `False`.
 
 ```
 ## BEGIN DEFINE FUNCTIONS
@@ -69,15 +71,19 @@ Next
 
 def fn_DoesObjectExist(NameOfFile):
 
+    ## CALL FUNCTION
     DoesObjectExist = os.path.exists(NameOfFile)
 
+    ## RETURN VARIABLE --> BOOLEAN TRUE or FALSE
     return(DoesObjectExist)
 
 
 def fn_IsObjectFile(NameOfFile):
 
+    ## CALL FUNCTION
     IsObjectFile = os.path.isfile(NameOfFile)
     
+    ## RETURN VARIABLE --> BOOLEAN TRUE or FALSE
     return(IsObjectFile)
 
 ## END DEFINE FUNCTIONS
@@ -85,6 +91,7 @@ def fn_IsObjectFile(NameOfFile):
 ## END DEFINE FUNCTIONS
 ```
 
+Next we will create a class to contain our unit tests.  Remember that tests in `unittest` are defined as methods of an instance of the the `unittest.Testcase` subclass.  
 ```
 ## BEGIN DEFINE CLASSES (UNITTESTS)
 ## BEGIN DEFINE CLASSES (UNITTESTS)
@@ -92,30 +99,54 @@ def fn_IsObjectFile(NameOfFile):
     
 class cls_Tests(unittest.TestCase):
     """ This is docstring for the class cls_Tests..."""
-    
-    def setUp(self):
-        """ This is docstring for setUp method...
-        Method called to prepare the test fixture.
-        This is called immediately before calling the test method."""
+      
+    def test_1A_AssertDoesObjectExist(self):
+        """ This is docstring for test_1A_AssertDoesObjectExist..."""
+        self.assertEqual(fn_DoesObjectExist("main.py"), True)
         
-        pass
-        
-    def tearDown(self):
-        """ This is docstring for tearDown method...
-        Method called immediately after the test method has been
-        called and the result recorded."""
-        
-        pass
+    def test_1B_AssertIsObjectFile(self):
+        """ This is docstring for test_1B_AssertIsObjectFile..."""
+        self.assertEqual(fn_IsObjectFile("main.py"), True)
 
-
-        
-       
 ## END DEFINE CLASSES (UNITTESTS)
 ## END DEFINE CLASSES (UNITTESTS)
 ## END DEFINE CLASSES (UNITTESTS)
 ```
 
-## Task 2 - 
+Finally, add the following code at the bottom below all other code in order to tie things together.
+```
+## BEGIN MAIN PROGRAM
+## BEGIN MAIN PROGRAM
+## BEGIN MAIN PROGRAM
+
+if __name__ == "__main__":
+
+    ## CALL FUNCTION - CHECKS IF OBJECT EXISTS IN LOCAL FILE PATH
+    DoesObjectExist = fn_DoesObjectExist(NameOfFile)
+
+    ## CALL FUNCTION - CHECKS IF OBJECT IS OF TYPE FILE
+    IsObjectFile = fn_IsObjectFile(NameOfFile)
+
+    ## EXECUTE UNIT TESTS
+    unittest.main()
+
+    
+## END MAIN PROGRAM
+## END MAIN PROGRAM
+## END MAIN PROGRAM
+
+## GAME OVER
+## GAME OVER
+## GAME OVER
+
+```
+
+Now run the program, 
+
+
+```
+
+## Task X - 
 
 Within the file `main.py`, create a Python list object called variable `t` that will be a List of a Range of Tesla Numbers (from 3 to 3000) to be defined as all numbers that are divisible by 3. The range will start at integer 3 and continue until integer 3003 in steps of 3, and thus will include all multiples of 3 including the integer 3000 (but not including integer 3003), i.e. a total of 1000 integer numbers.
 
