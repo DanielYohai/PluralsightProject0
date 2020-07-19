@@ -29,7 +29,7 @@ Begin your project by creating a Python file named `main.py` in the root folder 
 
 We will be using `unittest` to test for the existence of the files that we create.
 
-Within the file `main.py`, import both the `unittest` and `os` modules from the Python Standard Library, as we will be exploring some features of how Python interacts with your local computer file system.
+Within the file `main.py`, import both the `unittest` and `os` modules from the Python Standard Library, as well as `pytest` that you just downloaded and installed on your local computer. We will be exploring some features of how Python interacts with your local computer file system.
 
 ```
 ## BEGIN IMPORT MODULES
