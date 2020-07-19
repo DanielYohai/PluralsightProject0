@@ -64,9 +64,6 @@ The framework implemented by `unittest` supports fixtures, test suites, and a te
 
 https://docs.python.org/3/library/unittest.html
 
-Here is a list of Assert Methods:
-
-https://docs.python.org/3/library/unittest.html#assert-methods
 
 
 # Basic Test Structure
