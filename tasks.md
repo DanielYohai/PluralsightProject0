@@ -165,7 +165,7 @@ Test the program from your CLI with `unittest`.
 
 `python -m unittest -v main.py`
 
-Alternatively, you can test the same program with `pytest`.
+Alternatively, you can test the same program with `pytest` and the results message will be similar (yet not identical) to the one returned by `unittest`.
 
 `python -m pytest -v main.py`
 
