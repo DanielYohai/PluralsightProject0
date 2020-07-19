@@ -2,7 +2,7 @@
 
 This project is the beginning (i.e. Step 0) of a multi-step, scalable project that explores the qualities and interesting phenomena of "Tesla Numbers", i.e. numbers divisible by 3, e.g. 3, 6, 9, 12, 15, 18, etc.
 
-Each step will explore additional concepts and features of both Tesla Numbers as well as unit testing.
+Each step will explore additional concepts and features of both Tesla Numbers as well as unit testing.  Along the way, we will also learn and/or reinforce various Python concepts.
 
 Each step consists of a number of tasks - each of which will be unit tested.
 
