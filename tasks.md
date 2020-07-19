@@ -159,7 +159,9 @@ OK
 >>> 
 ```
 
-## Task 2
+## Task 2 - Create Python File `__init__.py`
+
+A view of the entire code should look like this:
 
 ```
 ## BEGIN IMPORT MODULES
