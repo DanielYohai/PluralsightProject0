@@ -278,7 +278,7 @@ if __name__ == "__main__":
 
 Let's continue our project by creating a Python file named `__init__.py` in the same root folder of your project where we just created the `main.py` file.  The `__init__.py` file makes the directory a Python package with all the features and benefits that this entails.
 
-Within our `unittest.Testcase` subclass `cls_Tests()`, create two more tests.  Change the `assert` statement to be `assertTrue()`, and use a text string `"__init__.py"` as the value for the first parameter.  We will find opportunity to refactor this code in a later step.
+Within our `unittest.Testcase` subclass `cls_Tests()`, create two more tests.  Change the `assertEqual()` assertion to be `assertTrue()`, and use a text string `"__init__.py"` as the value for the first parameter.  We will find opportunity to refactor this code in a later step.
 
 ```
 ## BEGIN DEFINE CLASSES (UNITTESTS)
