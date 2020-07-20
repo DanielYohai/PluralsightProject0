@@ -460,7 +460,7 @@ OK
 >>> 
 ```
 
-## Task 5 - 
+## Task 5 - Refactor Code:  Separate Funcionalities
 
 Currently, a view of the entire code script should look like this:
 
@@ -572,46 +572,130 @@ if __name__ == "__main__":
 ## GAME OVER
 ```
 
-Even though we have separated our code sections with comments, the script is nonetheless becoming quite large.  In order to make it easier to maintain, let's begin to separate our code into separate modules, packages, etc.
+However, even though we have separated our code sections (i.e. IMPORT MODULES, DECLARE VARIABLES, DEFINE FUNCTIONS, DEFINE CLASSES, MAIN PROGRAM) with comments, the script is nonetheless becoming quite large and will become more difficult to maintain as the code base grows.  In order to make it easier to maintain, let's begin to separate our code into separate modules, packages, etc.
 
-In your project's root directory, create a new Python file, and name it `test_unittests.py`.  Within this file, cut and paste your section of code that contains the class(es) of unit tests, i.e.:
+In your project's root directory, create a new Python file, and name it `test_unittests.py`.  Within this file, create sections for each of the following:  IMPORT MODULES, DECLARE VARIABLES, DEFINE CLASSES:
+
+Within the section for importing modules, import the modules `unittest` and `main`.  We need to import the `main.py' module because we will need access to the functions that we declared there.
 
 ```
+## BEGIN IMPORT MODULES
+## BEGIN IMPORT MODULES
+## BEGIN IMPORT MODULES
+
+import unittest
+import main
+
+## END IMPORT MODULES
+## END IMPORT MODULES
+## END IMPORT MODULES
+```
+
+We will also need to move the variable `NameOfFile` that we declared in the `main.py` module to the `test_unittest.py` module.
+
+```
+## BEGIN DECLARE VARIABLES
+## BEGIN DECLARE VARIABLES
+## BEGIN DECLARE VARIABLES
+
+NameOfFile = "main.py"
+
+## END DECLARE VARIABLES
+## END DECLARE VARIABLES
+## END DECLARE VARIABLES
+```
+
+From the `main.py` module, cut the code that contains your `unittest.TestCase` subclass, i.e. `cls_Tests()`, and paste it in the `test_unittest.py` module.  Since the functions that we will call are still located in the `main.py` module, it will be necessary to import this module in order to gain access to the objects contained there.
+
+It will be necessary to refactor our test assertions with MODULE.FUNCTION DOT.NOTATION, e.g.:
+
+```
+self.assertEqual(main.fn_DoesObjectExist(NameOfFile), True)
+self.assertEqual(main.fn_IsObjectFile(NameOfFile), True)
+self.assertTrue(main.fn_DoesObjectExist("__init__.py"), True)
+self.assertTrue(main.fn_IsObjectFile("__init__.py"), True)
+self.assertFalse(main.fn_DoesObjectExist("NoFile.py"), False)
+self.assertFalse(main.fn_IsObjectFile("NoFile.py"), False)
+
+```
+
+Thus your code for the test class and its test methods should look like the following:
+
 ## BEGIN DEFINE CLASSES (UNITTESTS)
 ## BEGIN DEFINE CLASSES (UNITTESTS)
 ## BEGIN DEFINE CLASSES (UNITTESTS)
-    
+
+
 class cls_Tests(unittest.TestCase):
     """ This is docstring for the class cls_Tests..."""
-      
+
     def test_1A_AssertDoesObjectExist(self):
         """ This is docstring for test_1A_AssertDoesObjectExist..."""
-        self.assertEqual(fn_DoesObjectExist(NameOfFile), True)
+        self.assertEqual(main.fn_DoesObjectExist(NameOfFile), True)
         
     def test_1B_AssertIsObjectFile(self):
         """ This is docstring for test_1B_AssertIsObjectFile..."""
-        self.assertEqual(fn_IsObjectFile(NameOfFile), True)
+        self.assertEqual(main.fn_IsObjectFile(NameOfFile), True)
 
     def test_2A_AssertDoesObjectExist(self):
         """ This is docstring for test_2A_AssertDoesObjectExist..."""
-        self.assertTrue(fn_DoesObjectExist("__init__.py"), True)
+        self.assertTrue(main.fn_DoesObjectExist("__init__.py"), True)
         
     def test_2B_AssertIsObjectFile(self):
         """ This is docstring for test_2B_AssertIsObjectFile..."""
-        self.assertTrue(fn_IsObjectFile("__init__.py"), True)
+        self.assertTrue(main.fn_IsObjectFile("__init__.py"), True)
 
     def test_3A_AssertDoesObjectExist(self):
         """ This is docstring for test_3A_AssertDoesObjectExist..."""
-        self.assertFalse(fn_DoesObjectExist("NoFile.py"), False)
+        self.assertFalse(main.fn_DoesObjectExist("NoFile.py"), False)
         
     def test_3B_AssertIsObjectFile(self):
         """ This is docstring for test_3B_AssertIsObjectFile..."""
-        self.assertFalse(fn_IsObjectFile("NoFile.py"), False)
-
+        self.assertFalse(main.fn_IsObjectFile("NoFile.py"), False)
+   
+       
 ## END DEFINE CLASSES (UNITTESTS)
 ## END DEFINE CLASSES (UNITTESTS)
 ## END DEFINE CLASSES (UNITTESTS)
 ```
+
+Within the `main.py` module, import the module `test_unittests.py`:
+
+```
+## BEGIN IMPORT MODULES
+## BEGIN IMPORT MODULES
+## BEGIN IMPORT MODULES
+
+import unittest
+import pytest
+import os
+import test_unittests
+
+## END IMPORT MODULES
+## END IMPORT MODULES
+## END IMPORT MODULES
+```
+
+If we ran the `main.py` module now, it would not run any unit tests since the tests are now located in a separate module, i.e. `test_unittests.py`.  Therefore, it will be necessary to refactor the code snippet `unittest.main()` to include reference to where the unit tests are located:   `unittest.main(module=test_unittests)`
+
+Therefore your code in the file `main.py` should now look like this:
+
+```
+## BEGIN MAIN PROGRAM
+## BEGIN MAIN PROGRAM
+## BEGIN MAIN PROGRAM
+
+if __name__ == "__main__":
+
+    ## EXECUTE UNIT TESTS
+    unittest.main(module=test_unittests)
+    
+    
+## END MAIN PROGRAM
+## END MAIN PROGRAM
+## END MAIN PROGRAM
+```
+
 
 
 ## Task 6 - 
