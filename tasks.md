@@ -382,7 +382,7 @@ FAIL: test_3A_AssertDoesObjectExist (__main__.cls_Tests)
 This is docstring for test_3A_AssertDoesObjectExist...
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "C:\Python38\notvenv_unittest\main.py", line 101, in test_3A_AssertDoesObjectExist
+  File "C:\Python380\notvenv_unittest\main.py", line 101, in test_3A_AssertDoesObjectExist
     self.assertTrue(fn_DoesObjectExist("NoFile.py"), True)
 AssertionError: False is not true : True
 
@@ -391,7 +391,7 @@ FAIL: test_3B_AssertIsObjectFile (__main__.cls_Tests)
 This is docstring for test_3B_AssertIsObjectFile...
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "C:\Python38\notvenv_unittest\main.py", line 105, in test_3B_AssertIsObjectFile
+  File "C:\Python380\notvenv_unittest\main.py", line 105, in test_3B_AssertIsObjectFile
     self.assertTrue(fn_IsObjectFile("NoFile.py"), True)
 AssertionError: False is not true : True
 
@@ -443,7 +443,7 @@ class cls_Tests(unittest.TestCase):
 ## END DEFINE CLASSES (UNITTESTS)
 ```
 
-Since we are expecting the unit test to return `False` when it checks for the existence of the non-existent file `"NoFile.py"`, these two tests now pass successfully.
+Since we are expecting these two unit tests to return `False` when it checks for the existence of the non-existent file `"NoFile.py"`, these two tests now pass successfully.
 
 ```
 DoesObjectExist =  True
