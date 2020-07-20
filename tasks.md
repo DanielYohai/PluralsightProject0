@@ -800,6 +800,8 @@ As it is forseeable that we may need to unit test for the existence of multiple 
 
 Within the `setUp` method, create an attribute of the class called `self.ListOfFileNames` which will contain a list of file names whose existence will be unit tested.  Then alter the code of your two tests to contain a `for` loop that will iterate through the file names.  Replace the static parameters contained with the current tests (i.e. `NameOfFile`, `"__init__.py"`, `"NoFile.py"`)
 
+Since we have now refactored code to include multiple variables, we can now delete the variable declaration `NameOfFile = "main.py"` that we declared earlier.
+
 ```
 ## BEGIN DEFINE CLASSES (UNITTESTS)
 ## BEGIN DEFINE CLASSES (UNITTESTS)
@@ -811,7 +813,7 @@ class cls_Tests(unittest.TestCase):
     def setUp(self):
         """ This is docstring for setUp method...
         Method called to prepare the Test Fixture.
-        This is called immediately before calling the test method."""
+        This is called immediately before calling the test method(s)."""
         
         self.ListOfFileNames = ["main.py", "__init__.py", "NoFile.py"]
 
@@ -837,5 +839,101 @@ class cls_Tests(unittest.TestCase):
 ## END DEFINE CLASSES (UNITTESTS)
 ## END DEFINE CLASSES (UNITTESTS)
 ``` 
+
+Run the tests, and note that they have failed:
+
+```
+DoesObjectExist =  True
+DoesObjectExist =  True
+DoesObjectExist =  True
+FIsObjectFile =  True
+IsObjectFile =  True
+IsObjectFile =  True
+F
+======================================================================
+FAIL: test_1A_AssertDoesObjectExist (test_unittests.cls_Tests)
+This is docstring for test_1A_AssertDoesObjectExist...
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Python380\notvenv_unittest\test_unittests.py", line 51, in test_1A_AssertDoesObjectExist
+    self.assertFalse(main.fn_DoesObjectExist(each), False)
+AssertionError: True is not false : False
+
+======================================================================
+FAIL: test_1B_AssertIsObjectFile (test_unittests.cls_Tests)
+This is docstring for test_1B_AssertIsObjectFile...
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Python380\notvenv_unittest\test_unittests.py", line 60, in test_1B_AssertIsObjectFile
+    self.assertFalse(main.fn_IsObjectFile(each), False)
+AssertionError: True is not false : False
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.035s
+
+FAILED (failures=2)
+>>> 
+```
+
+The tests failed because we have passed each filename through a `for` loop to both tests, and therefore all three filenames must be tested against all three assertions.  The two files that exist (i.e. `"main.py"` and `__init__.py`) will not pass the `assertFalse()` assertion, and the file that does not exist (i.e. `"NoFile.py"`) will not pass the `assertEqual()` and `assertTrue()` assertions.  
+
+Therefore, we must make some architectural decisions, and refactor our code.
+
+Since we are essentially concerned testing for the presence of files that we expect to exist, we can remove the `"NoFile.py"` element from our `self.ListOfFileNames` class attribute, as well as remove the `assertFalse()` statements from our two tests.
+
+```
+## BEGIN DEFINE CLASSES (UNITTESTS)
+## BEGIN DEFINE CLASSES (UNITTESTS)
+## BEGIN DEFINE CLASSES (UNITTESTS)
+
+class cls_Tests(unittest.TestCase):
+    """ This is docstring for the class cls_Tests..."""
+
+    def setUp(self):
+        """ This is docstring for setUp method...
+        Method called to prepare the Test Fixture.
+        This is called immediately before calling the test method(s)."""
+        
+        self.ListOfFileNames = ["main.py", "__init__.py"]
+
+    def test_1A_AssertDoesObjectExist(self):
+        """ This is docstring for test_1A_AssertDoesObjectExist..."""
+
+        for each in self.ListOfFileNames:
+            
+            self.assertEqual(main.fn_DoesObjectExist(each), True)
+            self.assertTrue(main.fn_DoesObjectExist(each), True)
+
+    def test_1B_AssertIsObjectFile(self):
+        """ This is docstring for test_1B_AssertIsObjectFile..."""
+
+        for each in self.ListOfFileNames:
+            
+            self.assertEqual(main.fn_IsObjectFile(each), True)
+            self.assertTrue(main.fn_IsObjectFile(each), True)
+
+## END DEFINE CLASSES (UNITTESTS)
+## END DEFINE CLASSES (UNITTESTS)
+## END DEFINE CLASSES (UNITTESTS)
+```
+
+Run the tests again, and you see that they now all pass for each variable.  Note that we pass two variables (i.e. `main.py` and `__init__.py`) to two tests that each have two assertions, i.e. 2 x 2 x 2 = 8 function calls, and therefore 8 print() statements are executed:
+
+```
+DoesObjectExist =  True
+DoesObjectExist =  True
+DoesObjectExist =  True
+DoesObjectExist =  True
+.IsObjectFile =  True
+IsObjectFile =  True
+IsObjectFile =  True
+IsObjectFile =  True
+.
+----------------------------------------------------------------------
+Ran 2 tests in 0.077s
+
+OK
+>>> 
+```
 
 ## Task 8 - 
