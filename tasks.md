@@ -776,7 +776,7 @@ class cls_Tests(unittest.TestCase):
 ## END DEFINE CLASSES (UNITTESTS)
 ```
 
-Run the tests, and you should see a success message.  Note that we have reduced our tests from six to two:
+Run the tests, and you should see a success message.  Note that we have reduced our tests from six to two, each with three assertion statements.
 
 ```
 DoesObjectExist =  True
@@ -794,7 +794,7 @@ OK
 ```
 
 
-## Task 7 - 
+## Task 7 - Refactor Code:  
 
 ## Task X - 
 
