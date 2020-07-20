@@ -879,7 +879,7 @@ The tests failed because we have passed each filename through a `for` loop to bo
 
 Therefore, we must make some architectural decisions, and refactor our code.
 
-Since we are essentially concerned testing for the presence of files that we expect to exist, we can remove the `"NoFile.py"` element from our `self.ListOfFileNames` class attribute, as well as remove the `assertFalse()` statements from our two tests.
+Since we are essentially concerned with testing for the presence of files that we expect to exist, we can remove the `"NoFile.py"` element from our `self.ListOfFileNames` class attribute, as well as remove the `assertFalse()` statements from our two tests.
 
 ```
 ## BEGIN DEFINE CLASSES (UNITTESTS)
