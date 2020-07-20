@@ -460,7 +460,7 @@ OK
 >>> 
 ```
 
-## Task 5 - Refactor Code:  Separate Funcionalities
+## Task 5 - Refactor Code:  Separate Functionalities
 
 Currently, a view of the entire code script should look like this:
 
