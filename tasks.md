@@ -607,7 +607,7 @@ NameOfFile = "main.py"
 
 From the `main.py` module, cut the code that contains your `unittest.TestCase` subclass, i.e. `cls_Tests()`, and paste it in the `test_unittest.py` module.  Since the functions that we will call are still located in the `main.py` module, it will be necessary to import this module in order to gain access to the objects contained there.
 
-It will be necessary to refactor our test assertions with MODULE.FUNCTION DOT.NOTATION, e.g.:
+It will be necessary to refactor our test assertions with PYTHONIC MODULE.FUNCTION DOT.NOTATION, e.g.:
 
 ```
 self.assertEqual(main.fn_DoesObjectExist(NameOfFile), True)
@@ -695,7 +695,7 @@ if __name__ == "__main__":
 ## END MAIN PROGRAM
 ```
 
-Now run the `main.py` script from either your IDE or the CLI, and all the tests should pass:
+Now run the `main.py` script from either your IDE, and all the tests should pass:
 
 ```
 DoesObjectExist =  True
@@ -712,6 +712,23 @@ OK
 >>> 
 ```
 
+However, if you try to run these tests from the CLI, the following commands will not work since the tests are now located in the `test_unittests.py` module:
+
+```
+python -m unittest main.py
+python -m unittest -v main.py
+python -m pytest main.py
+python -m pytest -v main.py
+```
+
+Therefore, if you wish to run these tests from the CLI, you will have to specify the current location of the unit tests:
+
+```
+python -m unittest test_unittests.py
+python -m unittest -v test_unittests.py
+python -m pytest test_unittests.py
+python -m pytest -v test_unittests.py
+```
 
 ## Task 6 - 
 
