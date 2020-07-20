@@ -443,7 +443,7 @@ class cls_Tests(unittest.TestCase):
 ## END DEFINE CLASSES (UNITTESTS)
 ```
 
-Since we are expecting these two unit tests to return `False` when it checks for the existence of the non-existent file `"NoFile.py"`, these two tests now pass successfully.
+Since we are expecting these two unit tests to return `False` when they check for the existence of the non-existent file `"NoFile.py"`, these two tests now pass successfully.
 
 ```
 DoesObjectExist =  True
