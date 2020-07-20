@@ -276,7 +276,7 @@ if __name__ == "__main__":
 ## GAME OVER
 ```
 
-Let's continue our project by creating a Python file named `__init__.py` in the same root folder of your project where we just created the `main.py` file.  The `__init__.py` file makes the directory a Python package with all the features and benefits that this entails.
+Let's continue our project by creating another Python file named `__init__.py` in the same root folder of your project where we just created the `main.py` file.  The `__init__.py` file makes the directory a Python package with all the features and benefits that this entails.
 
 Within our `unittest.Testcase` subclass `cls_Tests()`, create two more tests.  Change the `assertEqual()` assertion to be `assertTrue()`, and use a text string `"__init__.py"` as the value for the first parameter.  We will find opportunity to refactor this code in a later step.
 
@@ -367,7 +367,44 @@ class cls_Tests(unittest.TestCase):
 ## END DEFINE CLASSES (UNITTESTS)
 ```
 
+Run the unit tests in both `unittest` and `pytest`, and both Test Frameworks confirm that these last two tests fail because indeed no such file exists within our project's root directory with the name `"NoFile.py"`.
+
+```
+DoesObjectExist =  True
+.IsObjectFile =  True
+.DoesObjectExist =  True
+.IsObjectFile =  True
+.DoesObjectExist =  False
+FIsObjectFile =  False
+F
+======================================================================
+FAIL: test_3A_AssertDoesObjectExist (__main__.cls_Tests)
+This is docstring for test_3A_AssertDoesObjectExist...
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Python38\notvenv_unittest\main.py", line 101, in test_3A_AssertDoesObjectExist
+    self.assertTrue(fn_DoesObjectExist("NoFile.py"), True)
+AssertionError: False is not true : True
+
+======================================================================
+FAIL: test_3B_AssertIsObjectFile (__main__.cls_Tests)
+This is docstring for test_3B_AssertIsObjectFile...
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Python38\notvenv_unittest\main.py", line 105, in test_3B_AssertIsObjectFile
+    self.assertTrue(fn_IsObjectFile("NoFile.py"), True)
+AssertionError: False is not true : True
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.051s
+
+FAILED (failures=2)
+>>> 
+```
+
 ## Task 4 - Modify the Test to Pass; `self.assertTrue()`; `self.assertFalse()`
+
+Now let's modify these last two tests so that they will pass.  Since we are expecting no such file to exist, change the `assertTrue()` assertion to be `assertFalse()`, and change the second parameter to `True`. 
 
 ```
 ## BEGIN DEFINE CLASSES (UNITTESTS)
