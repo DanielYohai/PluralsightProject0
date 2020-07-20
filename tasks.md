@@ -621,6 +621,7 @@ self.assertFalse(main.fn_IsObjectFile("NoFile.py"), False)
 
 Thus your code for the test class and its test methods should look like the following:
 
+```
 ## BEGIN DEFINE CLASSES (UNITTESTS)
 ## BEGIN DEFINE CLASSES (UNITTESTS)
 ## BEGIN DEFINE CLASSES (UNITTESTS)
