@@ -712,7 +712,7 @@ OK
 >>> 
 ```
 
-However, if you try to run these tests from the CLI, the following commands will not work since the tests are now located in the `test_unittests.py` module:
+However, if you try to run these tests from the CLI, the following commands will not work since the unit tests are now located in the `test_unittests.py` module:
 
 ```
 python -m unittest main.py
