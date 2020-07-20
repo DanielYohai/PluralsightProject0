@@ -796,4 +796,46 @@ OK
 
 ## Task 7 - Refactor Code:  Multiple Variables
 
+As it is forseeable that we may need to unit test for the existence of multiple files, we need to refactor this code.  Within your `test_unittests.py` module, define a new class method called `setUp()`.  The `setUp()` method contains the Text Fixtures that are necessary to prepare data or processes for subsequent tests.
+
+Within the `setUp` method, create an attribute of the class called `self.ListOfFileNames` which will contain a list of file names whose existence will be unit tested.  Then alter the code of your two tests to contain a `for` loop that will iterate through the file names.  Replace the static parameters contained with the current tests (i.e. `NameOfFile`, `"__init__.py"`, `"NoFile.py"`)
+
+```
+## BEGIN DEFINE CLASSES (UNITTESTS)
+## BEGIN DEFINE CLASSES (UNITTESTS)
+## BEGIN DEFINE CLASSES (UNITTESTS)
+
+class cls_Tests(unittest.TestCase):
+    """ This is docstring for the class cls_Tests..."""
+
+    def setUp(self):
+        """ This is docstring for setUp method...
+        Method called to prepare the Test Fixture.
+        This is called immediately before calling the test method."""
+        
+        self.ListOfFileNames = ["main.py", "__init__.py", "NoFile.py"]
+
+    def test_1A_AssertDoesObjectExist(self):
+        """ This is docstring for test_1A_AssertDoesObjectExist..."""
+
+        for each in self.ListOfFileNames:
+            
+            self.assertEqual(main.fn_DoesObjectExist(each), True)
+            self.assertTrue(main.fn_DoesObjectExist(each), True)
+            self.assertFalse(main.fn_DoesObjectExist(each), False)
+
+    def test_1B_AssertIsObjectFile(self):
+        """ This is docstring for test_1B_AssertIsObjectFile..."""
+
+        for each in self.ListOfFileNames:
+            
+            self.assertEqual(main.fn_IsObjectFile(each), True)
+            self.assertTrue(main.fn_IsObjectFile(each), True)
+            self.assertFalse(main.fn_IsObjectFile(each), False)
+
+## END DEFINE CLASSES (UNITTESTS)
+## END DEFINE CLASSES (UNITTESTS)
+## END DEFINE CLASSES (UNITTESTS)
+``` 
+
 ## Task 8 - 
