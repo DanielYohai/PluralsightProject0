@@ -936,4 +936,8 @@ OK
 >>> 
 ```
 
-## Task 8 - 
+## Conclusion
+
+Congratulations!  If you have made it this far, then you have successfully completed Step 0 to set up our files and testing frameworks.
+
+Now that we have our initial files set up and successfully unit tested, we will continue next time with our study and examination of the mathematics of Tesla Numbers.
