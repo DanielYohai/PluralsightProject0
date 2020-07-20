@@ -62,10 +62,9 @@ The `unittest` Unit Testing Framework is part of the Python Standard Library.
 
 https://docs.python.org/3/library/unittest.html
 
-The framework implemented by `unittest` supports fixtures, test suites, and a test runner to enable automated testing.(Hellman 2017: 1051) `unittest` supports some important concepts in an object-oriented way such as Test Fixture, Test Case, Test Suite, Test Runner:
+The framework implemented by `unittest` supports Test Fixtures, Test Suites, and a Test Runner to enable automated testing.(Hellman 2017: 1051) `unittest` supports some important concepts in an object-oriented way such as Test Fixture, Test Case, Test Suite, Test Runner:
 
 https://docs.python.org/3/library/unittest.html
-
 
 
 # Basic Test Structure
@@ -79,7 +78,7 @@ Tests, as defined by `unittest`, have two parts:
 The basic building blocks of unit testing are test cases — single scenarios that must be set up and checked for correctness. In `unittest`, test cases are represented by `unittest.TestCase` instances. To make your own test cases you must write subclasses of `TestCase` or use `FunctionTestCase`.(Reference 2).  That is to say, individual tests are created by subclassing `TestCase` and overriding or adding appropriate methods.(Hellman 2017: 1051)
 
 # Running Tests
-The easiest way to run unittest tests is use the automatic discovery available through the command-line interface (CLI).(Hellman 2017: 1051)
+The easiest way to run `unittest` tests is use the automatic discovery available through the Command-Line Interface (CLI).(Hellman 2017: 1051)
 
 `python -m unittest test_unittests.py`
 
