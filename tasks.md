@@ -747,7 +747,7 @@ OK
 >>> 
 ```
 
-## Task 6 - Refactor Code:  Make Tests More Concise
+## Task 6 - Refactor Code:  Combine Assertion Statements
 
 We can refactor our tests to be more concise by gathering the assertions into two tests only, each with three assertions.
 
@@ -794,25 +794,6 @@ OK
 ```
 
 
-## Task 7 - Refactor Code:  
+## Task 7 - Refactor Code:  Multiple Variables
 
-## Task X - 
-
-Within the file `main.py`, create a Python list object called variable `t` that will be a List of a Range of Tesla Numbers (from 3 to 3000) to be defined as all numbers that are divisible by 3. The range will start at integer 3 and continue until integer 3003 in steps of 3, and thus will include all multiples of 3 including the integer 3000 (but not including integer 3003), i.e. a total of 1000 integer numbers.
-
-Most testing follows the Arrange-Act-Assert Model which will be explained throughout.
-```
-## DECLARE VARIABLES - ARRANGE - i.e. ARRANGE THE VARIABLES AND CONDITIONS TO BE TESTED
-t = list(range(3,3003,3))
-
-## TESTING PURPOSES - TEST MANUALLY - PRINT OUTPUT - 
-print(type(t))
-print(len(t))
-```
-
-Run the program from your IDLE, IDE, or Command Line Interface (CLI), and you will see the following output:
-
-``` 
-<class 'list'>
-1000
-```
+## Task 8 - 
