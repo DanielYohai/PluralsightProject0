@@ -8,11 +8,13 @@ https://github.com/DanielYohai/PluralsightProject0/blob/master/tasks.md
 
 This project is the beginning (i.e. Step 0) of a multi-step, scalable project that explores the qualities and interesting phenomena of "Tesla Numbers", i.e. numbers divisible by 3, e.g. 3, 6, 9, 12, 15, 18, etc.
 
-Each step will explore additional concepts and features of both Tesla Numbers as well as unit testing.  Along the way, we will also learn and/or reinforce various Python concepts.
+Each step will explore concepts and features well as unit testing.  Along the way, we will also learn and/or reinforce various Python concepts.
 
 Each step consists of a number of tasks - each of which will be unit tested.
 
-This Step 0 will begin by testing if input data are valid Tesla Numbers by the `%` MODULO operation, i.e. if divisible by 3, i.e.:
+This Step 0 will begin by setting up our project's root directory and files necessary.
+
+The next Step 1 will continue by testing if input data are valid Tesla Numbers by the `%` MODULO operation, i.e. if divisible by 3, i.e.:
 
 ```
 if x % 3 == 0: ## IF x % (MODULO, i.e. DIVIDED BY) 3 LEAVES A REMAINDER OF 0 (ZERO)...
@@ -22,7 +24,7 @@ else:
   ## ...OTHERWISE x IS NOT DIVISIBLE BY 3, AND THEREFORE NOT A VALID TESLA NUMBER
 ```
 
-However, first we must create modules (i.e. Python files) as a workspace to do our calculations, and we will use both `unittest` and `pytest` to confirm the creation and existence of the files that we create.  
+However, first we must create modules (i.e. Python files) as a workspace to do our computations, and we will use both `unittest` and `pytest` to confirm the creation and existence of the files that we create.  
 
 In order to gain a better perspective and learn the essential testing concepts - for each step and task in the project - we will first develop our tests using the `unittest` testing library.  Later we will develop the same steps and tasks a second time (i.e. practice!!) with the third-party `pytest` testing library in order to compare testing philosophies, concepts, and features.
 
