@@ -695,7 +695,7 @@ if __name__ == "__main__":
 ## END MAIN PROGRAM
 ```
 
-Now run the `main.py` script from either your IDE, and all the tests should pass:
+Now run the `main.py` script from your IDE, and all the tests should pass:
 
 ```
 DoesObjectExist =  True
@@ -728,6 +728,23 @@ python -m unittest test_unittests.py
 python -m unittest -v test_unittests.py
 python -m pytest test_unittests.py
 python -m pytest -v test_unittests.py
+```
+
+Run the tests from the CLI, and you should receive a success message similar to the following:
+
+```
+DoesObjectExist =  True
+.IsObjectFile =  True
+.DoesObjectExist =  True
+.IsObjectFile =  True
+.DoesObjectExist =  False
+.IsObjectFile =  False
+.
+----------------------------------------------------------------------
+Ran 6 tests in 0.068s
+
+OK
+>>> 
 ```
 
 ## Task 6 - 
