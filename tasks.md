@@ -404,7 +404,7 @@ FAILED (failures=2)
 
 ## Task 4 - Modify the Test to Pass; `self.assertFalse()`
 
-Now let's modify these last two tests so that they will pass.  Since we are expecting no such file to exist, change the `assertTrue()` assertion to be `assertFalse()`, and change the second parameter to `True`. 
+Now let's modify these last two tests so that they will pass.  Since we are expecting no such file to exist, change the `assertTrue()` assertion to be `assertFalse()`, and change the second parameter to `False`. 
 
 ```
 ## BEGIN DEFINE CLASSES (UNITTESTS)
