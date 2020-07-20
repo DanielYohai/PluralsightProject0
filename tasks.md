@@ -741,7 +741,7 @@ DoesObjectExist =  True
 .IsObjectFile =  False
 .
 ----------------------------------------------------------------------
-Ran 6 tests in 0.068s
+Ran 6 tests in 0.003s
 
 OK
 >>> 
