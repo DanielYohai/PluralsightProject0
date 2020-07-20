@@ -71,11 +71,11 @@ https://docs.python.org/3/library/unittest.html
 Tests, as defined by `unittest`, have two parts:
 
 <ol>
-  <li> code to manage test dependencies (called fixtures)</li>
-  <li> the test itself.</li>
+  <li>code to manage test dependencies (called Test Fixtures)</li>
+  <li>the test itself.</li>
 </ol>
 
-The basic building blocks of unit testing are test cases — single scenarios that must be set up and checked for correctness. In `unittest`, test cases are represented by `unittest.TestCase` instances. To make your own test cases you must write subclasses of `TestCase` or use `FunctionTestCase`.(Reference 2).  That is to say, individual tests are created by subclassing `TestCase` and overriding or adding appropriate methods.(Hellman 2017: 1051)
+The basic building blocks of unit testing are Test Cases — single scenarios that must be set up and checked for correctness. In `unittest`, Test Cases are represented by `unittest.TestCase` instances. To make your own Test Cases you must write subclasses of `TestCase` or use `FunctionTestCase`.(Reference 2).  That is to say, individual tests are created by subclassing `TestCase` and overriding or adding appropriate methods.(Hellman 2017: 1051)
 
 # Running Tests
 The easiest way to run `unittest` tests is use the automatic discovery available through the Command-Line Interface (CLI).(Hellman 2017: 1051)
