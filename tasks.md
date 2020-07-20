@@ -572,6 +572,48 @@ if __name__ == "__main__":
 ## GAME OVER
 ```
 
+Even though we have separated our code sections with comments, the script is nonetheless becoming quite large.  In order to make it easier to maintain, let's begin to separate our code into separate modules, packages, etc.
+
+In your project's root directory, create a new Python file, and name it `test_unittests.py`.  Within this file, cut and paste your section of code that contains the class(es) of unit tests, i.e.:
+
+```
+## BEGIN DEFINE CLASSES (UNITTESTS)
+## BEGIN DEFINE CLASSES (UNITTESTS)
+## BEGIN DEFINE CLASSES (UNITTESTS)
+    
+class cls_Tests(unittest.TestCase):
+    """ This is docstring for the class cls_Tests..."""
+      
+    def test_1A_AssertDoesObjectExist(self):
+        """ This is docstring for test_1A_AssertDoesObjectExist..."""
+        self.assertEqual(fn_DoesObjectExist(NameOfFile), True)
+        
+    def test_1B_AssertIsObjectFile(self):
+        """ This is docstring for test_1B_AssertIsObjectFile..."""
+        self.assertEqual(fn_IsObjectFile(NameOfFile), True)
+
+    def test_2A_AssertDoesObjectExist(self):
+        """ This is docstring for test_2A_AssertDoesObjectExist..."""
+        self.assertTrue(fn_DoesObjectExist("__init__.py"), True)
+        
+    def test_2B_AssertIsObjectFile(self):
+        """ This is docstring for test_2B_AssertIsObjectFile..."""
+        self.assertTrue(fn_IsObjectFile("__init__.py"), True)
+
+    def test_3A_AssertDoesObjectExist(self):
+        """ This is docstring for test_3A_AssertDoesObjectExist..."""
+        self.assertFalse(fn_DoesObjectExist("NoFile.py"), False)
+        
+    def test_3B_AssertIsObjectFile(self):
+        """ This is docstring for test_3B_AssertIsObjectFile..."""
+        self.assertFalse(fn_IsObjectFile("NoFile.py"), False)
+
+## END DEFINE CLASSES (UNITTESTS)
+## END DEFINE CLASSES (UNITTESTS)
+## END DEFINE CLASSES (UNITTESTS)
+```
+
+
 ## Task 6 - 
 
 ## Task 7 - 
