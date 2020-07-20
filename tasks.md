@@ -747,7 +747,52 @@ OK
 >>> 
 ```
 
-## Task 6 - 
+## Task 6 - Refactor Code:  Make Tests More Concise
+
+We can refactor our tests to be more concise by gathering the assertions into two tests only, each with three assertions.
+
+```
+## BEGIN DEFINE CLASSES (UNITTESTS)
+## BEGIN DEFINE CLASSES (UNITTESTS)
+## BEGIN DEFINE CLASSES (UNITTESTS)
+
+class cls_Tests(unittest.TestCase):
+    """ This is docstring for the class cls_Tests..."""
+
+    def test_1A_AssertDoesObjectExist(self):
+        """ This is docstring for test_1A_AssertDoesObjectExist..."""
+        self.assertEqual(main.fn_DoesObjectExist(NameOfFile), True)
+        self.assertTrue(main.fn_DoesObjectExist("__init__.py"), True)
+        self.assertFalse(main.fn_DoesObjectExist("NoFile.py"), False)
+        
+    def test_1B_AssertIsObjectFile(self):
+        """ This is docstring for test_1B_AssertIsObjectFile..."""
+        self.assertEqual(main.fn_IsObjectFile(NameOfFile), True)
+        self.assertTrue(main.fn_IsObjectFile("__init__.py"), True)
+        self.assertFalse(main.fn_IsObjectFile("NoFile.py"), False)
+
+## END DEFINE CLASSES (UNITTESTS)
+## END DEFINE CLASSES (UNITTESTS)
+## END DEFINE CLASSES (UNITTESTS)
+```
+
+Run the tests, and you should see a success message.  Note that we have reduced our tests from six to two:
+
+```
+DoesObjectExist =  True
+DoesObjectExist =  True
+DoesObjectExist =  False
+.IsObjectFile =  True
+IsObjectFile =  True
+IsObjectFile =  False
+.
+----------------------------------------------------------------------
+Ran 2 tests in 0.041s
+
+OK
+>>> 
+```
+
 
 ## Task 7 - 
 
