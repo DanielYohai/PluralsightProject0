@@ -626,7 +626,6 @@ Thus your code for the test class and its test methods should look like the foll
 ## BEGIN DEFINE CLASSES (UNITTESTS)
 ## BEGIN DEFINE CLASSES (UNITTESTS)
 
-
 class cls_Tests(unittest.TestCase):
     """ This is docstring for the class cls_Tests..."""
 
@@ -654,7 +653,6 @@ class cls_Tests(unittest.TestCase):
         """ This is docstring for test_3B_AssertIsObjectFile..."""
         self.assertFalse(main.fn_IsObjectFile("NoFile.py"), False)
    
-       
 ## END DEFINE CLASSES (UNITTESTS)
 ## END DEFINE CLASSES (UNITTESTS)
 ## END DEFINE CLASSES (UNITTESTS)
@@ -679,7 +677,7 @@ import test_unittests
 
 If we ran the `main.py` module now, it would not run any unit tests since the tests are now located in a separate module, i.e. `test_unittests.py`.  Therefore, it will be necessary to refactor the code snippet `unittest.main()` to include reference to where the unit tests are located:   `unittest.main(module=test_unittests)`
 
-Therefore your code in the file `main.py` should now look like this:
+Therefore your code in the section for the MAIN PROGRAM in the file `main.py` should now look like this:
 
 ```
 ## BEGIN MAIN PROGRAM
@@ -697,6 +695,22 @@ if __name__ == "__main__":
 ## END MAIN PROGRAM
 ```
 
+Now run the `main.py` script from either your IDE or the CLI, and all the tests should pass:
+
+```
+DoesObjectExist =  True
+.IsObjectFile =  True
+.DoesObjectExist =  True
+.IsObjectFile =  True
+.DoesObjectExist =  False
+.IsObjectFile =  False
+.
+----------------------------------------------------------------------
+Ran 6 tests in 0.051s
+
+OK
+>>> 
+```
 
 
 ## Task 6 - 
