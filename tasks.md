@@ -576,7 +576,7 @@ However, even though we have separated our code sections (i.e. IMPORT MODULES, D
 
 In your project's root directory, create a new Python file, and name it `test_unittests.py`.  Within this file, create sections for each of the following:  IMPORT MODULES, DECLARE VARIABLES, DEFINE CLASSES:
 
-Within the section for importing modules, import the modules `unittest` and `main`.  We need to import the `main.py' module because we will need access to the functions that we declared there.
+Within the section for importing modules, import the modules `unittest` and `main`.  We need to import the `main.py` module because we will need access to the functions that we declared there.
 
 ```
 ## BEGIN IMPORT MODULES
