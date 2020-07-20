@@ -324,7 +324,7 @@ OK
 >>> 
 ```
 
-## Task 3 - Create a Test that Fails; `self.assertTrue()`; `self.assertFalse()`
+## Task 3 - Create a Test that Fails; `self.assertTrue()`
 
 So far we have created tests that have all passed.  Now let's intentionally create a test that fails in order to examine the test results message.
 
@@ -402,7 +402,7 @@ FAILED (failures=2)
 >>> 
 ```
 
-## Task 4 - Modify the Test to Pass; `self.assertTrue()`; `self.assertFalse()`
+## Task 4 - Modify the Test to Pass; `self.assertFalse()`
 
 Now let's modify these last two tests so that they will pass.  Since we are expecting no such file to exist, change the `assertTrue()` assertion to be `assertFalse()`, and change the second parameter to `True`. 
 
@@ -443,7 +443,28 @@ class cls_Tests(unittest.TestCase):
 ## END DEFINE CLASSES (UNITTESTS)
 ```
 
+Since we are expecting the unit test to return `False` when it checks for the existence of the non-existent file `"NoFile.py"`, these two tests now pass successfully.
 
+```
+DoesObjectExist =  True
+.IsObjectFile =  True
+.DoesObjectExist =  True
+.IsObjectFile =  True
+.DoesObjectExist =  False
+.IsObjectFile =  False
+.
+----------------------------------------------------------------------
+Ran 6 tests in 0.058s
+
+OK
+>>> 
+```
+
+## Task 4 - 
+
+## Task 5 - 
+
+## Task 6 - 
 
 ## Task X - 
 
