@@ -118,11 +118,11 @@ class cls_Tests(unittest.TestCase):
       
     def test_1A_AssertDoesObjectExist(self):
         """ This is docstring for test_1A_AssertDoesObjectExist..."""
-        self.assertEqual(fn_DoesObjectExist(NameOfFile), True)
+        self.assertEqual(fn_DoesObjectExist(NameOfFile), True, "Should be True:  Object should exist")
         
     def test_1B_AssertIsObjectFile(self):
         """ This is docstring for test_1B_AssertIsObjectFile..."""
-        self.assertEqual(fn_IsObjectFile(NameOfFile), True)
+        self.assertEqual(fn_IsObjectFile(NameOfFile), True, "Should be True:  Object should be of type file")
 
 ## END DEFINE CLASSES (UNITTESTS)
 ## END DEFINE CLASSES (UNITTESTS)
@@ -247,11 +247,11 @@ class cls_Tests(unittest.TestCase):
       
     def test_1A_AssertDoesObjectExist(self):
         """ This is docstring for test_1A_AssertDoesObjectExist..."""
-        self.assertEqual(fn_DoesObjectExist(NameOfFile), True)
+        self.assertEqual(fn_DoesObjectExist(NameOfFile), True, "Should be True:  Object should exist")
         
     def test_1B_AssertIsObjectFile(self):
         """ This is docstring for test_1B_AssertIsObjectFile..."""
-        self.assertEqual(fn_IsObjectFile(NameOfFile), True)
+        self.assertEqual(fn_IsObjectFile(NameOfFile), True, "Should be True:  Object should be of type file")
 
 ## END DEFINE CLASSES (UNITTESTS)
 ## END DEFINE CLASSES (UNITTESTS)
@@ -290,19 +290,19 @@ class cls_Tests(unittest.TestCase):
       
     def test_1A_AssertDoesObjectExist(self):
         """ This is docstring for test_1A_AssertDoesObjectExist..."""
-        self.assertEqual(fn_DoesObjectExist(NameOfFile), True)
+        self.assertEqual(fn_DoesObjectExist(NameOfFile), True, "Should be True:  Object should exist")
         
     def test_1B_AssertIsObjectFile(self):
         """ This is docstring for test_1B_AssertIsObjectFile..."""
-        self.assertEqual(fn_IsObjectFile(NameOfFile), True)
+        self.assertEqual(fn_IsObjectFile(NameOfFile), True, "Should be True:  Object should be of type file")
 
     def test_2A_AssertDoesObjectExist(self):
         """ This is docstring for test_2A_AssertDoesObjectExist..."""
-        self.assertTrue(fn_DoesObjectExist("__init__.py"), True)
+        self.assertTrue(fn_DoesObjectExist("__init__.py"), True, "Should be True:  Object should exist")
         
     def test_2B_AssertIsObjectFile(self):
         """ This is docstring for test_2B_AssertIsObjectFile..."""
-        self.assertTrue(fn_IsObjectFile("__init__.py"), True)
+        self.assertTrue(fn_IsObjectFile("__init__.py"), True, "Should be True:  Object should be of type file")
 
 ## END DEFINE CLASSES (UNITTESTS)
 ## END DEFINE CLASSES (UNITTESTS)
@@ -340,27 +340,27 @@ class cls_Tests(unittest.TestCase):
       
     def test_1A_AssertDoesObjectExist(self):
         """ This is docstring for test_1A_AssertDoesObjectExist..."""
-        self.assertEqual(fn_DoesObjectExist(NameOfFile), True)
+        self.assertEqual(fn_DoesObjectExist(NameOfFile), True, "Should be True:  Object should exist")
         
     def test_1B_AssertIsObjectFile(self):
         """ This is docstring for test_1B_AssertIsObjectFile..."""
-        self.assertEqual(fn_IsObjectFile(NameOfFile), True)
+        self.assertEqual(fn_IsObjectFile(NameOfFile), True, "Should be True:  Object should be of type file")
 
     def test_2A_AssertDoesObjectExist(self):
         """ This is docstring for test_2A_AssertDoesObjectExist..."""
-        self.assertTrue(fn_DoesObjectExist("__init__.py"), True)
+        self.assertTrue(fn_DoesObjectExist("__init__.py"), True, "Should be True:  Object should exist")
         
     def test_2B_AssertIsObjectFile(self):
         """ This is docstring for test_2B_AssertIsObjectFile..."""
-        self.assertTrue(fn_IsObjectFile("__init__.py"), True)
+        self.assertTrue(fn_IsObjectFile("__init__.py"), True, "Should be True:  Object should be of type file")
 
     def test_3A_AssertDoesObjectExist(self):
         """ This is docstring for test_3A_AssertDoesObjectExist..."""
-        self.assertTrue(fn_DoesObjectExist("NoFile.py"), True)
+        self.assertTrue(fn_DoesObjectExist("NoFile.py"), True), "Should be True:  Object should exist")
         
     def test_3B_AssertIsObjectFile(self):
         """ This is docstring for test_3B_AssertIsObjectFile..."""
-        self.assertTrue(fn_IsObjectFile("NoFile.py"), True)
+        self.assertTrue(fn_IsObjectFile("NoFile.py"), True, "Should be True:  Object should be of type file")
 
 ## END DEFINE CLASSES (UNITTESTS)
 ## END DEFINE CLASSES (UNITTESTS)
@@ -416,27 +416,27 @@ class cls_Tests(unittest.TestCase):
       
     def test_1A_AssertDoesObjectExist(self):
         """ This is docstring for test_1A_AssertDoesObjectExist..."""
-        self.assertEqual(fn_DoesObjectExist(NameOfFile), True)
+        self.assertEqual(fn_DoesObjectExist(NameOfFile), True, "Should be True:  Object should exist")
         
     def test_1B_AssertIsObjectFile(self):
         """ This is docstring for test_1B_AssertIsObjectFile..."""
-        self.assertEqual(fn_IsObjectFile(NameOfFile), True)
+        self.assertEqual(fn_IsObjectFile(NameOfFile), True, "Should be True:  Object should be of type file")
 
     def test_2A_AssertDoesObjectExist(self):
         """ This is docstring for test_2A_AssertDoesObjectExist..."""
-        self.assertTrue(fn_DoesObjectExist("__init__.py"), True)
+        self.assertTrue(fn_DoesObjectExist("__init__.py"), True, "Should be True:  Object should exist")
         
     def test_2B_AssertIsObjectFile(self):
         """ This is docstring for test_2B_AssertIsObjectFile..."""
-        self.assertTrue(fn_IsObjectFile("__init__.py"), True)
+        self.assertTrue(fn_IsObjectFile("__init__.py"), True, "Should be True:  Object should be of type file")
 
     def test_3A_AssertDoesObjectExist(self):
         """ This is docstring for test_3A_AssertDoesObjectExist..."""
-        self.assertFalse(fn_DoesObjectExist("NoFile.py"), False)
+        self.assertFalse(fn_DoesObjectExist("NoFile.py"), False, "Should be False:  Object should NOT exist")
         
     def test_3B_AssertIsObjectFile(self):
         """ This is docstring for test_3B_AssertIsObjectFile..."""
-        self.assertFalse(fn_IsObjectFile("NoFile.py"), False)
+        self.assertFalse(fn_IsObjectFile("NoFile.py"), False, "Should be False:  Object should NOT be of type file")
 
 ## END DEFINE CLASSES (UNITTESTS)
 ## END DEFINE CLASSES (UNITTESTS)
@@ -527,27 +527,27 @@ class cls_Tests(unittest.TestCase):
       
     def test_1A_AssertDoesObjectExist(self):
         """ This is docstring for test_1A_AssertDoesObjectExist..."""
-        self.assertEqual(fn_DoesObjectExist(NameOfFile), True)
+        self.assertEqual(fn_DoesObjectExist(NameOfFile), True, "Should be True:  Object should exist")
         
     def test_1B_AssertIsObjectFile(self):
         """ This is docstring for test_1B_AssertIsObjectFile..."""
-        self.assertEqual(fn_IsObjectFile(NameOfFile), True)
+        self.assertEqual(fn_IsObjectFile(NameOfFile), True, "Should be True:  Object should be of type file")
 
     def test_2A_AssertDoesObjectExist(self):
         """ This is docstring for test_2A_AssertDoesObjectExist..."""
-        self.assertTrue(fn_DoesObjectExist("__init__.py"), True)
+        self.assertTrue(fn_DoesObjectExist("__init__.py"), True,  "Should be True:  Object should exist")
         
     def test_2B_AssertIsObjectFile(self):
         """ This is docstring for test_2B_AssertIsObjectFile..."""
-        self.assertTrue(fn_IsObjectFile("__init__.py"), True)
+        self.assertTrue(fn_IsObjectFile("__init__.py"), True, "Should be True:  Object should be of type file")
 
     def test_3A_AssertDoesObjectExist(self):
         """ This is docstring for test_3A_AssertDoesObjectExist..."""
-        self.assertFalse(fn_DoesObjectExist("NoFile.py"), False)
+        self.assertFalse(fn_DoesObjectExist("NoFile.py"), False,  "Should be True:  Object should NOT exist")
         
     def test_3B_AssertIsObjectFile(self):
         """ This is docstring for test_3B_AssertIsObjectFile..."""
-        self.assertFalse(fn_IsObjectFile("NoFile.py"), False)
+        self.assertFalse(fn_IsObjectFile("NoFile.py"), False, "Should be False:  Object should NOT be of type file")
 
 ## END DEFINE CLASSES (UNITTESTS)
 ## END DEFINE CLASSES (UNITTESTS)
@@ -610,12 +610,12 @@ From the `main.py` module, cut the code that contains your `unittest.TestCase` s
 It will be necessary to refactor our test assertions with PYTHONIC MODULE.FUNCTION DOT.NOTATION, e.g.:
 
 ```
-self.assertEqual(main.fn_DoesObjectExist(NameOfFile), True)
-self.assertEqual(main.fn_IsObjectFile(NameOfFile), True)
-self.assertTrue(main.fn_DoesObjectExist("__init__.py"), True)
-self.assertTrue(main.fn_IsObjectFile("__init__.py"), True)
-self.assertFalse(main.fn_DoesObjectExist("NoFile.py"), False)
-self.assertFalse(main.fn_IsObjectFile("NoFile.py"), False)
+self.assertEqual(main.fn_DoesObjectExist(NameOfFile), True, "Should be True:  Object should exist")
+self.assertEqual(main.fn_IsObjectFile(NameOfFile), True, "Should be True:  Object should be of type file")
+self.assertTrue(main.fn_DoesObjectExist("__init__.py"), True, "Should be True:  Object should exist")
+self.assertTrue(main.fn_IsObjectFile("__init__.py"), True, "Should be True:  Object should be of type file")
+self.assertFalse(main.fn_DoesObjectExist("NoFile.py"), False, "Should be False:  Object should NOT exist")
+self.assertFalse(main.fn_IsObjectFile("NoFile.py"), False, "Should be False:  Object should NOT be of type file")
 
 ```
 
@@ -631,27 +631,27 @@ class cls_Tests(unittest.TestCase):
 
     def test_1A_AssertDoesObjectExist(self):
         """ This is docstring for test_1A_AssertDoesObjectExist..."""
-        self.assertEqual(main.fn_DoesObjectExist(NameOfFile), True)
+        self.assertEqual(main.fn_DoesObjectExist(NameOfFile), True, "Should be True:  Object should exist")
         
     def test_1B_AssertIsObjectFile(self):
         """ This is docstring for test_1B_AssertIsObjectFile..."""
-        self.assertEqual(main.fn_IsObjectFile(NameOfFile), True)
+        self.assertEqual(main.fn_IsObjectFile(NameOfFile), True, "Should be True:  Object should be of type file")
 
     def test_2A_AssertDoesObjectExist(self):
         """ This is docstring for test_2A_AssertDoesObjectExist..."""
-        self.assertTrue(main.fn_DoesObjectExist("__init__.py"), True)
+        self.assertTrue(main.fn_DoesObjectExist("__init__.py"), True, "Should be True:  Object should exist")
         
     def test_2B_AssertIsObjectFile(self):
         """ This is docstring for test_2B_AssertIsObjectFile..."""
-        self.assertTrue(main.fn_IsObjectFile("__init__.py"), True)
+        self.assertTrue(main.fn_IsObjectFile("__init__.py"), True, "Should be True:  Object should be of type file")
 
     def test_3A_AssertDoesObjectExist(self):
         """ This is docstring for test_3A_AssertDoesObjectExist..."""
-        self.assertFalse(main.fn_DoesObjectExist("NoFile.py"), False)
+        self.assertFalse(main.fn_DoesObjectExist("NoFile.py"), False, "Should be False:  Object should NOT exist")
         
     def test_3B_AssertIsObjectFile(self):
         """ This is docstring for test_3B_AssertIsObjectFile..."""
-        self.assertFalse(main.fn_IsObjectFile("NoFile.py"), False)
+        self.assertFalse(main.fn_IsObjectFile("NoFile.py"), False, "Should be False:  Object should NOT be of type file")
    
 ## END DEFINE CLASSES (UNITTESTS)
 ## END DEFINE CLASSES (UNITTESTS)
@@ -761,15 +761,15 @@ class cls_Tests(unittest.TestCase):
 
     def test_1A_AssertDoesObjectExist(self):
         """ This is docstring for test_1A_AssertDoesObjectExist..."""
-        self.assertEqual(main.fn_DoesObjectExist(NameOfFile), True)
-        self.assertTrue(main.fn_DoesObjectExist("__init__.py"), True)
-        self.assertFalse(main.fn_DoesObjectExist("NoFile.py"), False)
+        self.assertEqual(main.fn_DoesObjectExist(NameOfFile), True, "Should be True:  Object should exist")
+        self.assertTrue(main.fn_DoesObjectExist("__init__.py"), True, "Should be True:  Object should exist")
+        self.assertFalse(main.fn_DoesObjectExist("NoFile.py"), False, "Should be False:  Object should NOT exist")
         
     def test_1B_AssertIsObjectFile(self):
         """ This is docstring for test_1B_AssertIsObjectFile..."""
-        self.assertEqual(main.fn_IsObjectFile(NameOfFile), True)
-        self.assertTrue(main.fn_IsObjectFile("__init__.py"), True)
-        self.assertFalse(main.fn_IsObjectFile("NoFile.py"), False)
+        self.assertEqual(main.fn_IsObjectFile(NameOfFile), True, "Should be True:  Object should be of type file")
+        self.assertTrue(main.fn_IsObjectFile("__init__.py"), True, "Should be True:  Object should be of type file")
+        self.assertFalse(main.fn_IsObjectFile("NoFile.py"), False, "Should be False:  Object should NOT be of type file")
 
 ## END DEFINE CLASSES (UNITTESTS)
 ## END DEFINE CLASSES (UNITTESTS)
@@ -824,9 +824,9 @@ class cls_Tests(unittest.TestCase):
         ## BEGIN FOR LOOP
         for each in self.ListOfFileNames:
             
-            self.assertEqual(main.fn_DoesObjectExist(each), True)
-            self.assertTrue(main.fn_DoesObjectExist(each), True)
-            self.assertFalse(main.fn_DoesObjectExist(each), False)
+            self.assertEqual(main.fn_DoesObjectExist(each), True, "Should be True:  Object should exist")
+            self.assertTrue(main.fn_DoesObjectExist(each), True, "Should be True:  Object should exist")
+            self.assertFalse(main.fn_DoesObjectExist(each), False, "Should be False:  Object should NOT exist")
             
         ## END FOR LOOP
 
@@ -836,9 +836,9 @@ class cls_Tests(unittest.TestCase):
         ## BEGIN FOR LOOP
         for each in self.ListOfFileNames:
             
-            self.assertEqual(main.fn_IsObjectFile(each), True)
-            self.assertTrue(main.fn_IsObjectFile(each), True)
-            self.assertFalse(main.fn_IsObjectFile(each), False)
+            self.assertEqual(main.fn_IsObjectFile(each), True, "Should be True:  Object should be of type file")
+            self.assertTrue(main.fn_IsObjectFile(each), True, "Should be True:  Object should be of type file")
+            self.assertFalse(main.fn_IsObjectFile(each), False, "Should be False:  Object should NOT be of type file")
             
         ## END FOR LOOP
 
@@ -910,8 +910,8 @@ class cls_Tests(unittest.TestCase):
         ## BEGIN FOR LOOP
         for each in self.ListOfFileNames:
             
-            self.assertEqual(main.fn_DoesObjectExist(each), True)
-            self.assertTrue(main.fn_DoesObjectExist(each), True)
+            self.assertEqual(main.fn_DoesObjectExist(each), True, "Should be True:  Object should exist")
+            self.assertTrue(main.fn_DoesObjectExist(each), True, "Should be True:  Object should exist")
             
         ## END FOR LOOP
 
@@ -921,8 +921,8 @@ class cls_Tests(unittest.TestCase):
         ## BEGIN FOR LOOP
         for each in self.ListOfFileNames:
             
-            self.assertEqual(main.fn_IsObjectFile(each), True)
-            self.assertTrue(main.fn_IsObjectFile(each), True)
+            self.assertEqual(main.fn_IsObjectFile(each), True, "Should be True:  Object should be of type file")
+            self.assertTrue(main.fn_IsObjectFile(each), True, "Should be True:  Object should be of type file")
           
         ## END FOR LOOP
 
