@@ -776,7 +776,7 @@ class cls_Tests(unittest.TestCase):
 ## END DEFINE CLASSES (UNITTESTS)
 ```
 
-Run the tests, and you should see a success message.  Note that we have reduced our tests from six to two, each with three assertion statements.
+Run the tests, and you should see a success message.  Note that we have reduced our tests from six to two, each with three assertion statements.  We can see from the output printed to the console that the six assertion statements still make six calls to the functions in `main.py`.
 
 ```
 DoesObjectExist =  True
