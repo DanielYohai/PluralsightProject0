@@ -798,7 +798,7 @@ OK
 
 As it is forseeable that we may need to unit test for the existence of multiple files, we need to refactor this code.  Within your `test_unittests.py` module, define a new class method called `setUp()`.  The `setUp()` method contains the Text Fixtures that are necessary to prepare data or processes for subsequent tests.
 
-Within the `setUp` method, create an attribute of the class called `self.ListOfFileNames` which will contain a list of file names whose existence will be unit tested.  Then alter the code of your two tests to contain a `for` loop that will iterate through the file names.  Replace the static parameters contained with the current tests (i.e. `NameOfFile`, `"__init__.py"`, `"NoFile.py"`)
+Within the `setUp` method, create an attribute of the class called `self.ListOfFileNames` which will contain a list of file names whose existence will be unit tested.  Then alter the code of your two tests to contain a `for` loop that will iterate through the file names.  Replace the static parameters contained within the current tests (i.e. `NameOfFile`, `"__init__.py"`, `"NoFile.py"`) with the `for` loop's iteration variable `each`. 
 
 Since we have now refactored code to include multiple variables, we can now delete the variable declaration `NameOfFile = "main.py"` that we declared earlier.
 
