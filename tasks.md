@@ -931,7 +931,7 @@ class cls_Tests(unittest.TestCase):
 ## END DEFINE CLASSES (UNITTESTS)
 ```
 
-Run the tests again, and you see that they now all pass for each variable.  Note that we pass two variables (i.e. `main.py` and `__init__.py`) to two tests that each have two assertions, i.e. 2 x 2 x 2 = 8 function calls, and therefore 8 print() statements are executed:
+Run the tests again, and you see that they now all pass for each variable.  Note that we pass two variables (i.e. `"main.py"` and `"__init__.py"`) to two tests that each have two assertions, i.e. 2 x 2 x 2 = 8 function calls, and therefore 8 `print()` statements are executed:
 
 ```
 DoesObjectExist =  True
