@@ -19,7 +19,7 @@ Both commands should return output that is similar to the following, but will va
 
 If you do not see a message similar to the one above, then `pytest` wasn't installed properly, and you will need to troubleshoot and solve this issue before you can proceed with the Projects Tasks.
 
-As this project scales, it will be increasingly difficult to test things manually, and therefore we will first use `unittest` and then `pytest` to automate our unit testing throughout.
+As this project scales, it will become increasingly difficult to test things manually, and therefore we will first use `unittest` and then `pytest` to automate our unit testing throughout.
 
 As we encounter programming issues, we will refactor our code as necessary.
 
