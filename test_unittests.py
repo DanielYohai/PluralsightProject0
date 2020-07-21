@@ -38,8 +38,8 @@ class cls_Tests(unittest.TestCase):
         ## BEGIN FOR LOOP
         for each in self.ListOfFileNames:
             
-            self.assertEqual(main.fn_DoesObjectExist(each), True)
-            self.assertTrue(main.fn_DoesObjectExist(each), True)
+            self.assertEqual(main.fn_DoesObjectExist(each), True, "Should be True:  Object should exist")
+            self.assertTrue(main.fn_DoesObjectExist(each), True, "Should be True:  Object should exist")
             
         ## END FOR LOOP
 
@@ -49,8 +49,8 @@ class cls_Tests(unittest.TestCase):
         ## BEGIN FOR LOOP
         for each in self.ListOfFileNames:
             
-            self.assertEqual(main.fn_IsObjectFile(each), True)
-            self.assertTrue(main.fn_IsObjectFile(each), True)
+            self.assertEqual(main.fn_IsObjectFile(each), True, "Should be True:  Object should be of type file")
+            self.assertTrue(main.fn_IsObjectFile(each), True, "Should be True:  Object should be of type file")
           
         ## END FOR LOOP
 
