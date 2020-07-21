@@ -382,7 +382,7 @@ FAIL: test_3A_AssertDoesObjectExist (__main__.cls_Tests)
 This is docstring for test_3A_AssertDoesObjectExist...
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "C:\Python380\notvenv_unittest\main.py", line 101, in test_3A_AssertDoesObjectExist
+  File "C:\Python380\test\main.py", line 79, in test_3A_AssertDoesObjectExist
     self.assertTrue(fn_DoesObjectExist("NoFile.py"), True)
 AssertionError: False is not true : True
 
@@ -391,12 +391,12 @@ FAIL: test_3B_AssertIsObjectFile (__main__.cls_Tests)
 This is docstring for test_3B_AssertIsObjectFile...
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "C:\Python380\notvenv_unittest\main.py", line 105, in test_3B_AssertIsObjectFile
+  File "C:\Python380\test\main.py", line 83, in test_3B_AssertIsObjectFile
     self.assertTrue(fn_IsObjectFile("NoFile.py"), True)
 AssertionError: False is not true : True
 
 ----------------------------------------------------------------------
-Ran 6 tests in 0.051s
+Ran 6 tests in 0.062s
 
 FAILED (failures=2)
 >>> 
