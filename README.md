@@ -14,7 +14,7 @@ Each step consists of a number of tasks - each of which will be unit tested.
 
 This Step 0 will begin by doing the initial set up of our project's root directory and Python files necessary.
 
-The following Step 1 will continue by testing if input data are valid Tesla Numbers by the `%` MODULO operation, i.e. if divisible by 3, i.e.:
+The following Step 1 will continue by testing if input data are valid Tesla Numbers by the `%` MODULO operation, i.e. if divisible by 3, and then other interesting features will be explored:
 
 ```
 if x % 3 == 0: ## IF x % (MODULO, i.e. DIVIDED BY) 3 LEAVES A REMAINDER OF 0 (ZERO)...
