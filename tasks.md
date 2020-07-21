@@ -815,25 +815,32 @@ class cls_Tests(unittest.TestCase):
         Method called to prepare the Test Fixture.
         This is called immediately before calling the test method(s)."""
         
+        ## DECLARE LIST OF VARIABLES OF FILENAMES
         self.ListOfFileNames = ["main.py", "__init__.py", "NoFile.py"]
 
     def test_1A_AssertDoesObjectExist(self):
         """ This is docstring for test_1A_AssertDoesObjectExist..."""
-
+        
+        ## BEGIN FOR LOOP
         for each in self.ListOfFileNames:
             
             self.assertEqual(main.fn_DoesObjectExist(each), True)
             self.assertTrue(main.fn_DoesObjectExist(each), True)
             self.assertFalse(main.fn_DoesObjectExist(each), False)
+            
+        ## END FOR LOOP
 
     def test_1B_AssertIsObjectFile(self):
         """ This is docstring for test_1B_AssertIsObjectFile..."""
 
+        ## BEGIN FOR LOOP
         for each in self.ListOfFileNames:
             
             self.assertEqual(main.fn_IsObjectFile(each), True)
             self.assertTrue(main.fn_IsObjectFile(each), True)
             self.assertFalse(main.fn_IsObjectFile(each), False)
+            
+        ## END FOR LOOP
 
 ## END DEFINE CLASSES (UNITTESTS)
 ## END DEFINE CLASSES (UNITTESTS)
@@ -894,23 +901,30 @@ class cls_Tests(unittest.TestCase):
         Method called to prepare the Test Fixture.
         This is called immediately before calling the test method(s)."""
         
+        ## DECLARE LIST OF VARIABLES OF FILENAMES
         self.ListOfFileNames = ["main.py", "__init__.py"]
 
     def test_1A_AssertDoesObjectExist(self):
         """ This is docstring for test_1A_AssertDoesObjectExist..."""
-
+        
+        ## BEGIN FOR LOOP
         for each in self.ListOfFileNames:
             
             self.assertEqual(main.fn_DoesObjectExist(each), True)
             self.assertTrue(main.fn_DoesObjectExist(each), True)
+            
+        ## END FOR LOOP
 
     def test_1B_AssertIsObjectFile(self):
         """ This is docstring for test_1B_AssertIsObjectFile..."""
 
+        ## BEGIN FOR LOOP
         for each in self.ListOfFileNames:
             
             self.assertEqual(main.fn_IsObjectFile(each), True)
             self.assertTrue(main.fn_IsObjectFile(each), True)
+          
+        ## END FOR LOOP
 
 ## END DEFINE CLASSES (UNITTESTS)
 ## END DEFINE CLASSES (UNITTESTS)
