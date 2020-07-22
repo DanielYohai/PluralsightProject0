@@ -39,7 +39,7 @@ class cls_Tests(unittest.TestCase):
         for each in self.ListOfFileNames:
             
             self.assertEqual(main.fn_DoesObjectExist(each), True, "Should be True:  Object should exist")
-            self.assertTrue(main.fn_DoesObjectExist(each), True, "Should be True:  Object should exist")
+            self.assertTrue(main.fn_DoesObjectExist(each), True)
             
         ## END FOR LOOP
 
@@ -50,7 +50,7 @@ class cls_Tests(unittest.TestCase):
         for each in self.ListOfFileNames:
             
             self.assertEqual(main.fn_IsObjectFile(each), True, "Should be True:  Object should be of type file")
-            self.assertTrue(main.fn_IsObjectFile(each), True, "Should be True:  Object should be of type file")
+            self.assertTrue(main.fn_IsObjectFile(each), True)
           
         ## END FOR LOOP
 
