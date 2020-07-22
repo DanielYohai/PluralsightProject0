@@ -280,7 +280,7 @@ Let's continue our project by creating another Python file named `__init__.py` i
 
 Within our `unittest.Testcase` subclass `cls_Tests()`, create two more tests.  Change the `assertEqual()` assertion to be `assertTrue()`, and use a text string `"__init__.py"` as the value for the first parameter.  We will find opportunity to refactor this code in a later step.
 
-Note that although `assertEqual()` assertion statement allows for an optional custom message as an optional third parameter, the `assertTrue()` assertion statement requires and allows only two parameters. 
+Note that although `assertEqual()` assertion statement allows for an optional custom message as an optional third parameter, the `assertTrue()` assertion statement requires and allows only two parameters. Try adding your own custom message as a Python text string for third parameter in the `assertTrue()` assertion statement, and you will see that a `TypeError` will be raised.
 
 ```
 ## BEGIN DEFINE CLASSES (UNITTESTS)
